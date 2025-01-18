@@ -1,0 +1,89 @@
+p {
+    margin-bottom: 1.05em !important;
+}
+
+.cell {
+    margin-bottom: 1.5em;
+    margin-top: 1.0em;
+}
+
+.no-title-slide h2 {
+    display: none;
+}
+
+.smaller-95 {
+    font-size: .95em;
+}
+
+​​.smaller-90 {
+    font-size: .90em;
+}
+
+.smaller-85 {
+    font-size: .85em;
+}
+
+.smaller-80 {
+    font-size: .80em;
+}
+
+.smaller-75 {
+    font-size: .75em;
+}
+
+.smaller-70 {
+    font-size: .70em;
+}
+
+.smaller-65 {
+    font-size: .65em;
+}
+
+.smaller-60 {
+    font-size: .60em;
+}
+
+.smaller-55 {
+    font-size: .55em;
+}
+
+.smaller-50 {
+    font-size: .50em;
+}
+
+.hide h2 {
+    display: none;
+}
+
+.hide h3 {
+    display: none;
+}
+
+.exercise {
+
+    h2 {
+        display: none;
+    }
+
+    h3 {
+        display: none;
+    }
+
+    .slide-background-content {
+        background-color: lightblue;
+    }
+
+}
+
+.question h2 {
+    display: none;
+}
+
+.question h3 {
+    display: none;
+}
+
+.explanation {
+    font-style: italic;
+    color: dimgrey;
+}

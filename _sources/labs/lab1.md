@@ -14,9 +14,9 @@ You will complete the following interactive courses provided by the GitHub Team 
 |   | **Task**                     | **Invitation**                                          | **Points** |
 |---|------------------------------|---------------------------------------------------------|------------|
 |  1| Introduction to GitHub       | [Invitation 1](https://classroom.github.com/a/3KHF85l1) | 25         |
-|  2| Communicate Using Markdown   | [Invitation 2](https://classroom.github.com/a/qCGXcgl_) | 20         |
-|  3| Review Pull Request          | [Invitation 3](https://classroom.github.com/a/sOr-0yOA) | 25   ß      |
-|  4| Resolve Merge Conflicts      | [Invitation 4](https://classroom.github.com/a/VMoDDF8r) | 25         |
+|  2| Communicate Using Markdown   | [Invitation 2](https://classroom.github.com/a/EhxJg32X) | 25         |
+|  3| Review Pull Request          | [Invitation 3](https://classroom.github.com/a/2bOUecXJ) | 25         |
+|  4| Resolve Merge Conflicts      | [Invitation 4](https://classroom.github.com/a/krrGIujI) | 25         |
 
 
 ## Grading

@@ -20,10 +20,10 @@ The first task in Lab 2 does not use GitHub Actions, it is a continuation of you
 
 |   | **Task**               | **Invitation**                                          | **Points** |
 |---|------------------------|---------------------------------------------------------|------------|
-|  1| Release-based Worfklow | [Invitation 1](https://classroom.github.com/a/cu9aB0zp) | 25         |
-|  2| Hello GitHub Actions   | [Invitation 2](https://classroom.github.com/a/XJCJHGxY) | 30         |
-|  3| Test with Actions      | [Invitation 3](https://classroom.github.com/a/K3KeJKtM) | 25         |
-|  4| Publish Packages       | [Invitation 4](https://classroom.github.com/a/9PfDS4T2) | 20         |
+|  1| Release-based Worfklow | [Invitation 1](https://classroom.github.com/a/KsgXMrdW) | 25         |
+|  2| Hello GitHub Actions   | [Invitation 2](https://classroom.github.com/a/XjEvJrdC) | 30         |
+|  3| Test with Actions      | [Invitation 3](https://classroom.github.com/a/66DFkhyL) | 25         |
+|  4| Publish Packages       | [Invitation 4](https://classroom.github.com/a/-URKrWTo) | 20         |
 
 ## Grading
 

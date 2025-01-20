@@ -11,6 +11,8 @@
 
 **Name:** Ankur Das<br>
 **Email Address:** [das2ar@mail.uc.edu](mailto:das2ar@mail.uc.edu)<br>
+**Office Hours:** TuTh 3:00-4:00 ([ICS/iCalendar File](https://ucincinnati.zoom.us/meeting/tZIlduuqqT0vHt34Ve8rMEX5h4sd3tdJIkci/ics?icsToken=DLFv4aMTkkLj3mFq9QAALAAAALMaVzuO50HkujinW-4NqbErTFfWXYkSY6opfV3rjPWggeHJ4NiSK7Xs3ZomLS-S0kckDO3QYbXqAKthzDAwMDAwMQ&meetingMasterEventId=JPRc64DoT1WTmleBt5BgDg))
+**Zoom Meeting Link:** https://ucincinnati.zoom.us/j/86812276549
 
 
 ## Student Workers
@@ -18,3 +20,5 @@
 **Name:** Prasana Ganesh<br>
 **Email Address:** [ganeshpe@mail.uc.edu](mailto:ganeshpe@mail.uc.edu)<br>
 
+**Name:** Anay Joshi<br>
+**Email Address:** [joshi2an@mail.uc.edu](mailto:joshi2an@mail.uc.edu)<br>

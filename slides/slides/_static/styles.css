@@ -113,3 +113,34 @@ p {
     font-weight: bold;
     text-transform: uppercase;
 }
+
+
+.scrollblock {
+    font-family: Georgia, serif;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.block-setup {
+	background-color: #348fd4;
+}
+
+.block-setup h2 {
+	color: #06406c;
+}
+
+.block-setup a {
+	color: #FFF;
+	font-size: 40px;
+	background-color: #06406c;
+	padding: 10px 15px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.block-setup a:hover {
+	text-decoration: underline;
+}

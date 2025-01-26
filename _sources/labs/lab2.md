@@ -25,6 +25,14 @@ The first task in Lab 2 does not use GitHub Actions, it is a continuation of you
 |  3| Test with Actions      | [Invitation 3](https://classroom.github.com/a/66DFkhyL) | 25         |
 |  4| Publish Packages       | [Invitation 4](https://classroom.github.com/a/-URKrWTo) | 20         |
 
+```{warning}
+In step 1 of Publish Packages, the instructions currently say:
+
+`7. Replace YOURNAME with your username.`
+
+This is incorrect. You must replace `YOURNAME/publish-packages` with your GitHub repository's exact location (e.g., `UC3093C/lab-2-publish-packages-YOURNAME`).
+```
+
 ## Grading
 
 For each task, full points will be awarded only for complete tasks. Zero points will be given for partial completion or no attempt.

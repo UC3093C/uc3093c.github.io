@@ -235,17 +235,25 @@
 </section>
 <section id="architecture" class="title-slide slide level3 center">
 <h3>Architecture</h3>
-<p>In virtualization, a hypervisor lets several virtual machines (VMs) run on one physical server, but each VM requires its own whole OS. That creates resource overhead. Containerization, on the other hand, shares a host system’s OS kernel. Containers are lighter because they don’t require OS instances, which means less overhead and faster performance.</p>
+<div class="smaller-85">
+<p>In virtualization, a hypervisor lets several virtual machines (VMs) run on one physical server, but each VM requires its own whole OS. That creates resource overhead.</p>
+<p>Containerization, on the other hand, shares a host system’s OS kernel. Containers are lighter because they don’t require OS instances, which means less overhead and faster performance.</p>
+</div>
 </section>
 
 <section id="performance" class="title-slide slide level3 center">
 <h3>Performance</h3>
-<p>Containers do not need to boot an entire OS and therefore can start in seconds, versus the often-cited minutes it takes a VM to launch. That’s because they consume fewer resources, such as CPU, and memory, and are the perfect fit for environments requiring efficiency in resource utilization and rapid scaling, such as microservices or applications running in the cloud.</p>
+<div class="smaller-85">
+<p>Containers do not need to boot an entire OS and therefore can start in seconds, versus the often-cited minutes it takes a VM to launch. That’s because they consume fewer resources, such as CPU, and memory — perfect for environments requiring efficiency in resource utilization and rapid scaling, such as microservices or applications running in the cloud.</p>
+</div>
 </section>
 </section>
 <section id="scalability" class="title-slide slide level2 center">
 <h2>Scalability</h2>
-<p>Containers are designed to scale very rapidly and very intensively, with multiple instances appearing rapidly across a cluster. They have an architecture that is lightweight, which makes them perfect for cloud-native applications and dynamic workloads. VMs are also scalable, but they require a lot of time, effort, and resources in order to deploy. They are thus useless in scenarios where adjustability to fluctuating workloads needs to happen very quickly.</p>
+<div class="smaller-85">
+<p>Containers are designed to scale very rapidly and very intensively, with multiple instances appearing rapidly across a cluster. They have an architecture that is lightweight, which makes them perfect for cloud-native applications and dynamic workloads.</p>
+<p>VMs are also scalable, but they require a lot of time, effort, and resources in order to deploy. They are thus useless in scenarios where adjustability to fluctuating workloads needs to happen very quickly.</p>
+</div>
 <aside class="notes">
 <p>Containerization and virtualization are two highly important technologies that are useful for the isolation of an application; however, these differ fundamentally in resource usage, flexibility, and architecture. Without such understanding, organizations will struggle to optimize their strategies for deploying applications appropriately and improve overall performance in diverse IT environments.</p>
 <style type="text/css">

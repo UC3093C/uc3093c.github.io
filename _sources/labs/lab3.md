@@ -61,8 +61,6 @@ Your lab submissions will be evaluated based on the following criteria:
 
 ## Grading Rubric
 
-**Student Name:** _________________________  **Grade:** _________ / 100 points
-
 | **Criteria**                     | **Excellent (Points Range)** | **Good (Points Range)** | **Fair (Points Range)** | **Poor (Points Range)** |
 |--------------------------------------|---------------------------|------------------------|-----------------------|--------------------------|
 | **Part 1: Scenario Analysis (Total: 50 points)** |                           |                        |                       |                          |

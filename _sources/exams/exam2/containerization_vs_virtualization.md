@@ -6,19 +6,19 @@
 
 2.  Which technology isolates applications so they can run safely and reliably?
     
-    - a) Bare Metal
-    - b) Virtualization
-    - c) Containerization
-    - d) Both B and C
+    - A) Bare Metal
+    - B) Virtualization
+    - C) Containerization
+    - D) Both B and C
 
 3.  Containerization is described as a _______________ form of virtualization.
 
 4.  **Select All That Apply:** Which of the following are popular container platforms?
     
-    - a) VMware
-    - b) Docker
-    - c) Kubernetes
-    - d) Microsoft Hyper-V
+    - A) VMware
+    - B) Docker
+    - C) Kubernetes
+    - D) Microsoft Hyper-V
 
 5.  Virtualization allows running several virtual machines on a physical server under the management of a _______________.
 
@@ -26,61 +26,61 @@
 
 7.  Which technology generally offers faster boot times?
     
-    - a) Virtualization
-    - b) Containerization
+    - A) Virtualization
+    - B) Containerization
 
 8.  **Select All That Apply:** Which of the following are benefits of virtualization?
     
-    - a) Increased flexibility in IT infrastructure
-    - b) Reduced hardware expenses
-    - c) Speed when deploying applications
-    - d) All of the above
+    - A) Increased flexibility in IT infrastructure
+    - B) Reduced hardware expenses
+    - C) Speed when deploying applications
+    - D) All of the above
 
 9.  In terms of architecture, containerization shares the OS kernel, while virtualization uses a _______________.
 
 10. Which technology provides stronger isolation and dedicated OS per VM?
     
-    - a) Containerization
-    - b) Virtualization
+    - A) Containerization
+    - B) Virtualization
 
 11. Which is better suited for cloud-native, microservices apps?
     
-    - a) Virtualization
-    - b) Containerization
+    - A) Virtualization
+    - B) Containerization
 
 12. For which of the following scenarios would virtualization be the *most* appropriate choice?
     
-    - a) Deploying a new microservice-based application.
-    - b) Running legacy applications that require a specific OS environment.
-    - c) Scaling an application quickly in response to fluctuating demand.
-    - d) Implementing a CI/CD pipeline.
+    - A) Deploying a new microservice-based application.
+    - B) Running legacy applications that require a specific OS environment.
+    - C) Scaling an application quickly in response to fluctuating demand.
+    - D) Implementing a CI/CD pipeline.
 
 13. Which of the following is NOT a use case for containerization?
     
-    - a) Cloud-native applications
-    - b) Microservices architectures
-    - c) Legacy applications
-    - d) CI/CD pipelines
+    - A) Cloud-native applications
+    - B) Microservices architectures
+    - C) Legacy applications
+    - D) CI/CD pipelines
 
 14. **True or False:** If your organization requires different operating systems for various applications—such as running Windows for certain software and Linux for others - containerization is the solution.
 
 15. Which technology generally consumes fewer resources (CPU, memory, etc.)?
     
-    - a) Virtualization
-    - b) Containerization
+    - A) Virtualization
+    - B) Containerization
 
 16. Infrastructure as a Service (IaaS) primarily uses which technology?
     
-    - a) Bare Metal
-    - b) Virtualization
-    - c) Containerization
-    - d) Serverless
+    - A) Bare Metal
+    - B) Virtualization
+    - C) Containerization
+    - D) Serverless
 
 17. Platform as a Service (PaaS) often utilizes which technology for application deployment?
     
-    - a) Bare Metal
-    - b) Virtualization
-    - c) Containerization
-    - d) Serverless
+    - A) Bare Metal
+    - B) Virtualization
+    - C) Containerization
+    - D) Serverless
 
 18. **True or False:** Hypervisors and containerization cannot be used together.

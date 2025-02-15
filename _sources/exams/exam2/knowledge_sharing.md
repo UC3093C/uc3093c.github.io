@@ -8,17 +8,17 @@
 
 3.  Which of the following is NOT a typical challenge to knowledge sharing within an organization?
 
-    - a) Lack of psychological safety
-    - b) Information islands
-    - c) Over-documentation
-    - d) Single point of failure (SPOF)
+    - A) Lack of psychological safety
+    - B) Information islands
+    - C) Over-documentation
+    - D) Single point of failure (SPOF)
 
 4.  **Select All That Apply:** Which of the following are characteristics of "Information Islands"?
 
-    - a) Unified knowledge base
-    - b) Information fragmentation
-    - c) Information duplication
-    - d) Information skew
+    - A) Unified knowledge base
+    - B) Information fragmentation
+    - C) Information duplication
+    - D) Information skew
 
 5.  A situation where critical knowledge resides with only one person is known as a _______________.
 
@@ -26,69 +26,69 @@
 
 7.  According to the chapter, what is more at the core of software engineering?
     
-    - a) Code
-    - b) People
+    - A) Code
+    - B) People
 
 8.  Tribal knowledge is most accurately described as:
     
-    - a) Formally documented procedures
-    - b) Information known by individuals but not written down
-    - c) Knowledge accessible to everyone in the organization
-    - d) Outdated documentation
+    - A) Formally documented procedures
+    - B) Information known by individuals but not written down
+    - C) Knowledge accessible to everyone in the organization
+    - D) Outdated documentation
 
 9.  What is the first step when a new engineer joins Google?
     
-    - a) They are assigned a project
-    - b) They are assigned a mentor
-    - c) They are assigned a machine
-    - d) They are assigned a office
+    - A) They are assigned a project
+    - B) They are assigned a mentor
+    - C) They are assigned a machine
+    - D) They are assigned a office
 
 10. According to the text, which of the following is the MOST important part of an effective team?
     
-    - a) Competitive spirit
-    - b) Psychological Safety
-    - c) Technical Expertise
-    - d) Strong Leadership
+    - A) Competitive spirit
+    - B) Psychological Safety
+    - C) Technical Expertise
+    - D) Strong Leadership
 
 11. **Fill in the Blank:** When trying to learn something new, you should always be _______________ questions.
 
 12. The principle of "Chesterton's Fence" emphasizes:
     
-    - a) Always removing obstacles immediately
-    - b) Understanding the reason for something before changing it
-    - c) Building new fences for security
-    - d) Ignoring existing structures
+    - A) Always removing obstacles immediately
+    - B) Understanding the reason for something before changing it
+    - C) Building new fences for security
+    - D) Ignoring existing structures
 
 13.  What is the primary disadvantage of getting one-to-one help?
 
-    - a) Low bandwidth
-    - b) Limited scale
-    - c) High cost
-    - d) Difficulty in finding experts
+    - A) Low bandwidth
+    - B) Limited scale
+    - C) High cost
+    - D) Difficulty in finding experts
 
 14.  What is the Google's Q&A internal platform called?
 
 15.  What is the most important way to achieve a safe and welcoming environment?
 
-    - a) Having strict rules
-    - b) Group interactions to be cooperative, not adversarial
-    - c) Having clear leadership
-    - d) Having experts on staff
+    - A) Having strict rules
+    - B) Group interactions to be cooperative, not adversarial
+    - C) Having clear leadership
+    - D) Having experts on staff
 
 16.  **Select All That Apply:** Which of the following are examples of how Google engineers teach others?
 
-    - a) Office Hours
-    - b) Tech Talks
-    - c) Teaching classes
-    - d) Reviewing Code
-    - e) All of the above
+    - A) Office Hours
+    - B) Tech Talks
+    - C) Teaching classes
+    - D) Reviewing Code
+    - E) All of the above
 
 17. What is the primary goal of documentation?
 
-    - a) To serve as a paper trail
-    - b) To help readers learn something
-    - c) To satisfy compliance requirements
-    - d) To track project progress
+    - A) To serve as a paper trail
+    - B) To help readers learn something
+    - C) To satisfy compliance requirements
+    - D) To track project progress
 
 18. Google's internal documentation platform that integrates documentation with source code is called _______________.
 
@@ -100,10 +100,10 @@
 
 22.  Which of the following is NOT a goal of the readability program?
 
-    - a) Enforce consistency
-    - b) Avoid islands
-    - c) Avoid drifting from established norms
-    - d) To make code unreadable
+    - A) Enforce consistency
+    - B) Avoid islands
+    - C) Avoid drifting from established norms
+    - D) To make code unreadable
 
 23. At a meta level, _______________ is knowledge.
 
@@ -117,10 +117,10 @@
 
 28. Which of the following is a consequence of information islands?
 
-    - a) Improved communication between teams
-    - b) Redundant recreation of knowledge
-    - c) Standardized processes across the organization
-    - d) Centralized decision-making
+    - A) Improved communication between teams
+    - B) Redundant recreation of knowledge
+    - C) Standardized processes across the organization
+    - D) Centralized decision-making
 
 29. **True or False:** Canonical Sources of Information are decentralized, team-specific documents designed to foster unique approaches within each group.
 
@@ -130,18 +130,18 @@
 
 32. Which of the following best describes "Information Skew"?
 
-    - a) Complete lack of information on a topic
-    - b) Different teams using conflicting methods for the same task
-    - c) Information stored only in physical documents
-    - d) Knowledge accessible only to senior management
+    - A) Complete lack of information on a topic
+    - B) Different teams using conflicting methods for the same task
+    - C) Information stored only in physical documents
+    - D) Knowledge accessible only to senior management
 
 33. When different teams independently recreate the same processes due to lack of shared resources, this is called _______________.
 
 34. **All-or-Nothing Expertise** is an example of:
 
-    - a) A well-balanced team with diverse skills
-    - b) A knowledge gap where some know everything and others know very little
-    - c) A mentorship program for new hires
-    - d) A system of shared documentation
+    - A) A well-balanced team with diverse skills
+    - B) A knowledge gap where some know everything and others know very little
+    - C) A mentorship program for new hires
+    - D) A system of shared documentation
 
 35. Mimicking solutions or patterns without understanding them is known as _______________.

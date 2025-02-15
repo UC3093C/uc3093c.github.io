@@ -60,7 +60,7 @@
     - d) Ignoring existing structures
 
 13.  What is the primary disadvantage of getting one-to-one help?
-    
+
     - a) Low bandwidth
     - b) Limited scale
     - c) High cost
@@ -69,14 +69,14 @@
 14.  What is the Google's Q&A internal platform called?
 
 15.  What is the most important way to achieve a safe and welcoming environment?
-    
+
     - a) Having strict rules
     - b) Group interactions to be cooperative, not adversarial
     - c) Having clear leadership
     - d) Having experts on staff
 
 16.  **Select All That Apply:** Which of the following are examples of how Google engineers teach others?
-    
+
     - a) Office Hours
     - b) Tech Talks
     - c) Teaching classes
@@ -84,7 +84,7 @@
     - e) All of the above
 
 17. What is the primary goal of documentation?
-    
+
     - a) To serve as a paper trail
     - b) To help readers learn something
     - c) To satisfy compliance requirements
@@ -99,7 +99,7 @@
 21. **True or False:**  Code should be thought of as a way to transcribe knowledge.
 
 22.  Which of the following is NOT a goal of the readability program?
-    
+
     - a) Enforce consistency
     - b) Avoid islands
     - c) Avoid drifting from established norms
@@ -116,7 +116,7 @@
 27. **True or False:** In a healthy learning culture, it is important to discourage failure in order to avoid mistakes.
 
 28. Which of the following is a consequence of information islands?
-    
+
     - a) Improved communication between teams
     - b) Redundant recreation of knowledge
     - c) Standardized processes across the organization
@@ -129,7 +129,7 @@
 31. Areas of code that engineers avoid modifying due to fear of causing issues are referred to as _______________.
 
 32. Which of the following best describes "Information Skew"?
-    
+
     - a) Complete lack of information on a topic
     - b) Different teams using conflicting methods for the same task
     - c) Information stored only in physical documents
@@ -138,7 +138,7 @@
 33. When different teams independently recreate the same processes due to lack of shared resources, this is called _______________.
 
 34. **All-or-Nothing Expertise** is an example of:
-    
+
     - a) A well-balanced team with diverse skills
     - b) A knowledge gap where some know everything and others know very little
     - c) A mentorship program for new hires

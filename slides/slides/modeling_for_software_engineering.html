@@ -238,37 +238,50 @@
 <section>
 <section id="the-modeling-process" class="title-slide slide level2 center">
 <h2>The Modeling Process</h2>
-
+<p>Conceptual modeling involves <strong>developing abstractions</strong> to represent real-world entities, relationships, and rules. It helps structure and communicate knowledge about a domain, making key concepts, their properties, and interconnections <strong>understandable to both humans and machines</strong>.</p>
 </section>
+<section id="what-is-modeling" class="title-slide slide level3 center">
+<h3><strong>What is Modeling?</strong></h3>
+<ul>
+<li>The process of <strong>creating structured representations</strong> of systems.<br>
+</li>
+<li>Focuses on <strong>relevant details</strong> while omitting irrelevant ones.<br>
+</li>
+<li>Helps <strong>analyze, understand, and answer specific questions</strong> about a system.</li>
+</ul>
+</section>
+
 <section id="abstraction" class="title-slide slide level3 center">
 <h3>Abstraction</h3>
+<div class="smaller-80">
 <ul>
-<li><strong>Definition</strong>: Process of classifying real-world phenomena into concepts</li>
-<li><strong>Role</strong>: Creates the bridge between actual systems and our models</li>
-<li><strong>Example</strong>: Grouping all university lectures into the “Lecture” concept</li>
+<li><strong>What It Is</strong>: The process of classifying real-world phenomena into concepts.</li>
+<li><strong>Why It Matters</strong>: Bridges the gap between real-world systems and their models.</li>
+<li><strong>Example</strong>: Individual transactions, such as “Payment #XF29853 at 14:32:45,” are grouped under the abstract concept of “Payment”, which represents financial exchanges in a system.</li>
 </ul>
+</div>
 </section>
 
 <section id="from-reality-to-abstraction" class="title-slide slide level3 center">
 <h3>From Reality to Abstraction</h3>
 <div class="smaller-70">
 <ul>
-<li><strong>Phenomenon (System Elements)</strong>
+<li><strong>Phenomenon (Real-World Instances)</strong>
 <ul>
-<li>Concrete, observable instances or events in the real world</li>
+<li>Concrete, observable events or objects in reality.</li>
 <li>Examples:
 <ul>
 <li>“Order #87652 submitted March 10”</li>
 <li>“Transaction #XF29853 at 14:32:45”</li>
 </ul></li>
 </ul></li>
-<li><strong>Concept (Model Elements)</strong>
+<li><strong>Concept (Abstract Model Constructs)</strong>
 <ul>
 <li>Abstract representations that classify related phenomena into meaningful groups</li>
 <li>Examples:
 <ul>
-<li>“Order” (modeling purchase transactions)</li>
-<li>“Payment” (modeling financial exchanges)</li>
+<li>“Order” (a generalized representation of purchase transactions)</li>
+<li>“Payment” (a generalized representation of financial exchanges)</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -278,39 +291,24 @@
 <section id="concept-structure" class="title-slide slide level3 center scrollable" style="padding-left: 20px;">
 <h3>Concept Structure</h3>
 <div class="smaller-70">
-<p>In formal conceptual modeling, a concept has three key aspects:</p>
+<p>In formal <strong>conceptual modeling</strong>, a concept has three key aspects:</p>
 <ol type="1">
 <li><strong>Symbol</strong>: The name or representation used to denote the concept</li>
-<li><strong>Intension</strong>: The defining properties or characteristics of the concept (meaning)</li>
-<li><strong>Extension</strong>: The set of all instances to which the concept applies</li>
+<li><strong>Intension</strong>: The defining properties or conditions that determine membership in the concept (meaning)</li>
+<li><strong>Extension</strong>: The set of all real or possible instances to which the concept applies</li>
 </ol>
 <p>Example: “User” Concept</p>
 <div style="margin-top: -1em;">
 <ol type="1">
 <li><strong>Symbol</strong>: User</li>
 <li><strong>Intension</strong>: An entity with authentication credentials that can interact with the system</li>
-<li><strong>Extension</strong>: All possible instances of users in the system domain</li>
+<li><strong>Extension</strong>: The set of all users who exist or could exist in the system domain</li>
 </ol>
 </div>
 </div>
 </section>
 
-<section id="modeling" class="title-slide slide level3 center">
-<h3>Modeling</h3>
-<ul>
-<li><strong>Definition</strong>: Developing abstractions to represent systems</li>
-<li><strong>Purpose</strong>: To answer specific questions about the system</li>
-<li><strong>Technique</strong>: Focus on relevant details, omit irrelevant ones</li>
-<li><strong>Result</strong>: Creates a simplified representation (model) of the system</li>
-</ul>
-</section>
-</section>
-<section>
-<section id="systems-models-views" class="title-slide slide level2 center">
-<h2>Systems, Models, Views</h2>
-
-</section>
-<section id="systems-models-views-1" class="title-slide slide level3 hide center" data-background-image="./assets/systems_models_views.png" data-background-opacity="1" data-background-size="900px">
+<section id="systems-models-views" class="title-slide slide level3 hide center" data-background-image="./assets/systems_models_views.png" data-background-opacity="1" data-background-size="900px">
 <h3>Systems, Models, Views</h3>
 
 </section>
@@ -327,10 +325,13 @@
 <section id="model" class="title-slide slide level3 center" data-background-image="./assets/systems_models_views.png" data-background-opacity="0.15" data-background-size="900px">
 <h3>Model</h3>
 <ul>
-<li>An <strong>abstraction</strong> that describes a system or part of a system</li>
-<li>Simplifies complexity while preserving essential characteristics</li>
-<li>Can represent different aspects (structure, behavior, etc.)</li>
-<li>Example: Scale model, Flight simulator</li>
+<li>An <strong>abstraction</strong> that represents a system or part of a system.<br>
+</li>
+<li><strong>Simplifies complexity</strong> while preserving essential characteristics.<br>
+</li>
+<li>Can represent <strong>different aspects</strong>, such as <strong>structure</strong> or <strong>behavior</strong>.<br>
+</li>
+<li><strong>Example</strong>: Scale models, flight simulators.</li>
 </ul>
 </section>
 
@@ -364,12 +365,7 @@
 </div>
 </div>
 </section>
-</section>
-<section>
-<section id="relationships-between-components" class="title-slide slide level2 center">
-<h2>Relationships Between Components</h2>
 
-</section>
 <section id="system-model-relationship" class="title-slide slide level3 center">
 <h3>System-Model Relationship</h3>
 <ul>
@@ -397,16 +393,6 @@
 </ul>
 </section>
 </section>
-<section id="application-to-software-engineering" class="title-slide slide level2 center">
-<h2>Application to Software Engineering</h2>
-<ul>
-<li>Forward Engineering: Creating models to design software before implementation</li>
-<li>Reverse Engineering: Creating models to understand existing software</li>
-<li>Iterative Development: Models evolve as understanding improves</li>
-<li>Documentation: Models provide lasting knowledge about system design</li>
-</ul>
-</section>
-
 <section>
 <section id="types-of-models" class="title-slide slide level2 center">
 <h2>Types of Models</h2>
@@ -574,11 +560,11 @@
 </section>
 </section>
 <section>
-<section id="unified-modeling-language-uml" class="title-slide slide level2 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.15" data-background-size="90%">
+<section id="unified-modeling-language-uml" class="title-slide slide level2 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.15" data-background-size="80%">
 <h2>Unified Modeling Language (UML)</h2>
 <p>UML is a standardized family of graphical notations for visualizing, specifying, constructing, and documenting software systems.</p>
 </section>
-<section id="key-characteristics" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.15" data-background-size="90%">
+<section id="key-characteristics" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.10" data-background-size="80%">
 <h3>Key Characteristics</h3>
 <ul>
 <li><strong>Purpose</strong>: Visually represent software architecture and behavior</li>
@@ -588,7 +574,7 @@
 </ul>
 </section>
 
-<section id="evolution-governance" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.15" data-background-size="90%">
+<section id="evolution-governance" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.10" data-background-size="80%">
 <h3>Evolution &amp; Governance</h3>
 <ul>
 <li><strong>Origin</strong>: First published in 1994</li>
@@ -618,11 +604,11 @@
 </section>
 </section>
 <section>
-<section id="why-use-uml" class="title-slide slide level2 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.15" data-background-size="90%">
+<section id="why-use-uml" class="title-slide slide level2 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.15" data-background-size="80%">
 <h2>Why Use UML?</h2>
 
 </section>
-<section id="blueprint-your-software-with-precision" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.15" data-background-size="90%">
+<section id="blueprint-your-software-with-precision" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.10" data-background-size="80%">
 <h3>Blueprint Your Software with Precision</h3>
 <ul>
 <li>Provides <strong>formal notation</strong> for designing new software</li>
@@ -631,7 +617,7 @@
 </ul>
 </section>
 
-<section id="transform-complex-ideas-into-clear-designs" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.15" data-background-size="90%">
+<section id="transform-complex-ideas-into-clear-designs" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.10" data-background-size="80%">
 <h3>Transform Complex Ideas into Clear Designs</h3>
 <ul>
 <li><strong>Forces structured thinking</strong> about software architecture</li>
@@ -640,7 +626,7 @@
 </ul>
 </section>
 
-<section id="visualize-systems-at-every-scale" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.15" data-background-size="90%">
+<section id="visualize-systems-at-every-scale" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.10" data-background-size="80%">
 <h3>Visualize Systems at Every Scale</h3>
 <ul>
 <li>Enables visualization at <strong>different abstraction levels</strong>:
@@ -652,7 +638,7 @@
 </ul>
 </section>
 
-<section id="bridge-the-communication-gap" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.15" data-background-size="90%">
+<section id="bridge-the-communication-gap" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.10" data-background-size="80%">
 <h3>Bridge the Communication Gap</h3>
 <ul>
 <li>Serves as a <strong>common language</strong> among software professionals</li>
@@ -664,11 +650,11 @@
 </section>
 </section>
 <section>
-<section id="uml-diagram-types" class="title-slide slide level2 hide center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="1.0" data-background-size="90%">
+<section id="uml-diagram-types" class="title-slide slide level2 hide center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="1.0" data-background-size="80%">
 <h2>UML Diagram Types</h2>
 
 </section>
-<section id="structural-diagrams" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.15" data-background-size="90%">
+<section id="structural-diagrams" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.10" data-background-size="80%">
 <h3>Structural Diagrams</h3>
 <p><strong>Purpose</strong>: Visualize the static architecture of a system</p>
 <div class="smaller-70">
@@ -687,7 +673,7 @@
 </div>
 </section>
 
-<section id="behavioral-diagrams" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.15" data-background-size="90%">
+<section id="behavioral-diagrams" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.10" data-background-size="80%">
 <h3>Behavioral Diagrams</h3>
 <p><strong>Purpose</strong>: Capture the dynamic interactions within a system</p>
 <div class="smaller-70">
@@ -711,7 +697,7 @@
 </div>
 </section>
 
-<section id="uml-diagram-selection-guide" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.15" data-background-size="90%">
+<section id="uml-diagram-selection-guide" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.10" data-background-size="80%">
 <h3>UML Diagram Selection Guide</h3>
 <div class="smaller-70">
 <p><strong>For System Architecture</strong>:</p>
@@ -741,7 +727,7 @@
 </div>
 </section>
 
-<section id="uml-diagram-usage" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.10" data-background-size="90%">
+<section id="uml-diagram-usage" class="title-slide slide level3 center" data-background-image="./assets/uml_diagram_types.svg" data-background-opacity="0.10" data-background-size="80%">
 <h3>UML Diagram Usage</h3>
 <div>
 
@@ -818,16 +804,31 @@
 </section>
 <section>
 <section id="computer-aided-software-engineering-case-tools" class="title-slide slide level2 center">
-<h2>Computer-Aided Software Engineering (CASE) tools</h2>
+<h2>Computer-Aided Software Engineering (CASE) Tools</h2>
+
+</section>
+<section id="case-tools-overview" class="title-slide slide level3 hide center">
+<h3>CASE Tools Overview</h3>
+<div class="smaller-85">
 <p><strong>Computer-Aided Software Engineering (CASE) tools</strong> support various SDLC tasks:</p>
+<div style="margin-top: -1em;">
 <ul>
 <li>Creating UML models and diagrams</li>
-<li>Generating code from models</li>
 <li>Reverse engineering code into models</li>
+<li>Generating code from models</li>
+<li>Non-UML CASE tools:
+<ul>
+<li>Data modeling tools (ERD)</li>
+<li>Business process modeling tools (BPMN)</li>
+<li>Requirements management tools</li>
 <li>Analyzing code complexity</li>
 <li>Calculating software metrics</li>
+</ul></li>
 </ul>
+</div>
+</div>
 </section>
+
 <section id="available-uml-tools" class="title-slide slide level3 center">
 <h3>Available UML Tools</h3>
 <ul>
@@ -845,14 +846,9 @@
 </ul></li>
 </ul>
 </section>
-</section>
-<section>
-<section id="when-to-use-modeling-tools" class="title-slide slide level2 center">
-<h2>When to Use Modeling Tools</h2>
 
-</section>
-<section id="core-principles" class="title-slide slide level3 center">
-<h3>Core Principles</h3>
+<section id="usage-core-principles" class="title-slide slide level3 center">
+<h3>Usage Core Principles</h3>
 <ul>
 <li>Modeling is a creative activity requiring iteration</li>
 <li>Tools can constrain early creative thinking</li>
@@ -869,10 +865,16 @@
 </ul>
 </section>
 </section>
-<section id="axe-sharpening" class="title-slide slide level2 center">
+<section>
+<section id="axe-sharpening" class="title-slide slide level2 hide center">
 <h2>Axe Sharpening</h2>
+<div class="bam">
 <p>“If I had six hours to chop down a tree, I’d spend the first four sharpening the axe.”</p>
 <p>– Unknown</p>
+</div>
+</section>
+<section id="preparation-is-key" class="title-slide slide level3 hide center">
+<h3>Preparation is Key</h3>
 <p>This quote underscores the importance of preparation, modeling is your axe-sharpening process:</p>
 <ul>
 <li>Helps you think about what you’re building</li>
@@ -893,6 +895,7 @@
           display:block!important;
       }</style></aside>
 
+</section>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">

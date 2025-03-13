@@ -142,19 +142,11 @@
 <section>
 <section id="activity-diagrams" class="title-slide slide level2 center">
 <h2>Activity Diagrams</h2>
-<p>UML Activity Diagrams depict the dynamic flow of control and data within a system by highlighting:</p>
-<ul>
-<li><strong>Sequential and Parallel Processing Steps</strong><br>
-</li>
-<li><strong>Decision Points and Branches</strong><br>
-</li>
-<li><strong>Business Process Workflows</strong><br>
-</li>
-<li><strong>Operational Sequences</strong><br>
-</li>
-<li><strong>System Behavior from a Functional Perspective</strong></li>
-</ul>
-<p>These diagrams effectively illustrate how activities interconnect and the possible paths a process can take as it executes. Consequently, they provide a clear, high-level view of system operation and are equally valuable for technical implementation details and business process modeling.</p>
+<div class="{smaller-80}">
+<p>UML Activity Diagrams depict the dynamic flow of activities or processes, showing how one action transitions to the next. They provide a clear, high-level view of system operation and are equally valuable for both technical implementation details and business process modeling.</p>
+<p><strong>Purpose</strong> - Model workflow and business processes. - Visualize logic for complex operations or algorithms.</p>
+<p><strong>Key Benefits</strong> - Highlights parallel and conditional paths. - Facilitates process optimization by revealing bottlenecks.</p>
+</div>
 </section>
 <section id="example---pt.1" class="title-slide slide level3 hide center">
 <h3>Example - pt.1</h3>
@@ -218,7 +210,7 @@
 <section id="state-machine-diagrams" class="title-slide slide level2 center scrollable">
 <h2>State Machine Diagrams</h2>
 <div class="smaller-60">
-<p>State machine diagrams—often referred to as <strong>statechart diagrams</strong>—depict how a system or object behaves by illustrating:</p>
+<p>UML State machine diagrams—often referred to as <strong>statechart diagrams</strong>—depict how a system or object behaves by illustrating:</p>
 <ul>
 <li><strong>States:</strong> The distinct conditions in which an object can exist during its lifecycle.<br>
 </li>
@@ -332,7 +324,19 @@
 <section>
 <section id="use-case-diagrams" class="title-slide slide level2 center">
 <h2>Use Case Diagrams</h2>
-<p>UML Use Case Diagrams illustrate how users—called actors—interact with a system, capturing the system’s functionality from an external viewpoint. As a type of behavioral diagram in the UML standard, they are commonly used to model high-level requirements, focusing on the relationships between the system and its actors, whether those actors are people or other systems. This makes them particularly valuable for clarifying system scope and understanding how specific user goals are met through various use cases.</p>
+<div class="smaller-70">
+<p>UML Use Case Diagrams illustrate how users (actors) interact with a system, focusing on the system’s functionality from an external viewpoint. This makes them particularly valuable for clarifying system scope and understanding how specific user goals are met through various use cases.</p>
+<p><strong>Purpose</strong></p>
+<ul>
+<li>Identify high-level requirements.</li>
+<li>Clarify how the system will be used by external entities (people or other systems).</li>
+</ul>
+<p><strong>Key Benefits</strong></p>
+<ul>
+<li>Helps define system scope.</li>
+<li>Ensures all user goals are addressed in system design.</li>
+</ul>
+</div>
 </section>
 <section id="example---pt.1-2" class="title-slide slide level3 hide center">
 <h3>Example - pt.1</h3>
@@ -453,7 +457,11 @@
 <section>
 <section id="communication-diagrams" class="title-slide slide level2 center">
 <h2>Communication Diagrams</h2>
-<p>UML <strong>Communication Diagrams</strong> illustrate how objects or parts within a system interact by emphasizing their <strong>relationships</strong> (links) and the <strong>messages</strong> exchanged. While they include a sequence of messages, the main focus is on the <strong>network of links</strong> connecting the objects rather than the strict timeline of interactions. By highlighting how objects collaborate to fulfill a process or operation, Communication Diagrams complement Sequence Diagrams, which place greater emphasis on <strong>message order</strong> over time.</p>
+<div class="smaller-70">
+<p>UML <strong>Communication Diagrams</strong> illustrate how objects or parts within a system interact, emphasizing their <strong>relationships</strong> (links) and the <strong>messages</strong> exchanged. While they do depict a sequence of messages, their primary focus is on the <strong>network of links</strong> connecting the objects rather than the strict timeline of interactions. By showing how objects collaborate to fulfill a process or operation, Communication Diagrams complement Sequence Diagrams, which place greater emphasis on the <strong>order</strong> of messages over time.</p>
+<p><strong>Purpose</strong> - Highlight relationships among collaborating objects. - Show which objects communicate and how they are connected.</p>
+<p><strong>Key Benefits</strong> - Emphasizes the network of connections. - Complements Sequence Diagrams by focusing on structural relationships.</p>
+</div>
 </section>
 <section id="example---pt.1-3" class="title-slide slide level3 hide center">
 <h3>Example - pt.1</h3>
@@ -533,7 +541,11 @@
 <section>
 <section id="sequence-diagrams" class="title-slide slide level2 center">
 <h2>Sequence Diagrams</h2>
-<p>UML <strong>Sequence Diagrams</strong> visually depict the flow of logic within a system, providing a way to <strong>document</strong> and <strong>validate</strong> interactions among components. They are widely used for <strong>analysis</strong> and <strong>design</strong>, helping teams understand and communicate the sequence of operations and data exchanges in a clear, structured manner.</p>
+<div class="smaller-70">
+<p>UML <strong>Sequence Diagrams</strong> visually depict the flow of logic within a system by showing how objects interact over time and emphasizing the order in which messages are exchanged. They are widely used for <strong>analysis</strong> and <strong>design</strong>, helping teams understand and communicate the sequence of operations and data exchanges in a clear, structured manner.</p>
+<p><strong>Purpose</strong> - Describe the sequence of method calls and events between system components. - Detail time-sensitive interactions in a process.</p>
+<p><strong>Key Benefits</strong> - Makes event ordering explicit. - Aids in debugging by showing the exact flow of messages.</p>
+</div>
 </section>
 <section id="example---pt.1-4" class="title-slide slide level3 hide center">
 <h3>Example - pt.1</h3>
@@ -673,8 +685,10 @@
 </section>
 <section id="timing-diagrams" class="title-slide slide level2 hide center scrollable">
 <h2>Timing Diagrams</h2>
-<div class="smaller-60">
-<p>UML <strong>timing diagrams</strong> are used to show the change in state or value of one or more elements over time. They are used to show the interaction between objects and the order in which they occur.</p>
+<div class="smaller-70">
+<p>UML <strong>Timing Diagrams</strong> illustrate how an object’s (or component’s) state or condition changes over a linear timeline, emphasizing how it interacts under strict timing constraints.</p>
+<p><strong>Purpose</strong> - Visualize time-based behavior of objects or processes. - Show performance or timing requirements explicitly.</p>
+<p><strong>Key Benefits</strong> - Helps identify timing bottlenecks or race conditions. - Ensures correct synchronization in real-time systems.</p>
 </div>
 <div>
 
@@ -725,7 +739,9 @@
 <section id="interaction-overview-diagrams" class="title-slide slide level2 hide center scrollable">
 <h2>Interaction Overview Diagrams</h2>
 <div class="smaller-60">
-<p>UML <strong>Interaction Overview Diagrams</strong> are a variant of UML sequence diagrams, with a focus on the overview of the flow of control where the nodes represent interaction diagrams.</p>
+<p>UML <strong>Interaction Overview Diagrams</strong> are a variant of UML sequence diagrams. They combine the flow of activity diagrams with the interactions of sequence diagrams to provide a high-level view of control flow among multiple interactions.</p>
+<p><strong>Purpose</strong> - Present a bird’s-eye perspective of how multiple interactions or scenarios fit together. - Organize complex sequences of interactions in a structured way.</p>
+<p><strong>Key Benefits</strong> - Simplifies large, intricate scenarios. - Offers a modular approach to orchestrating different interaction fragments.</p>
 </div>
 <div>
 

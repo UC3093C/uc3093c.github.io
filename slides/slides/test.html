@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="uml_structure_diagrams_files/libs/clipboard/clipboard.min.js"></script>
-<script src="uml_structure_diagrams_files/libs/quarto-html/tabby.min.js"></script>
-<script src="uml_structure_diagrams_files/libs/quarto-html/popper.min.js"></script>
-<script src="uml_structure_diagrams_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="uml_structure_diagrams_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="uml_structure_diagrams_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="uml_structure_diagrams_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="test_files/libs/clipboard/clipboard.min.js"></script>
+<script src="test_files/libs/quarto-html/tabby.min.js"></script>
+<script src="test_files/libs/quarto-html/popper.min.js"></script>
+<script src="test_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="test_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="test_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="test_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.42">
 
-  <title>uml_structure_diagrams</title>
+  <meta name="author" content="John Doe">
+  <title>Habits</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="uml_structure_diagrams_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="uml_structure_diagrams_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="test_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="test_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -28,12 +29,12 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="uml_structure_diagrams_files/libs/revealjs/dist/theme/quarto-2f366650f320edcfcf53d73c80250a32.css">
+  <link rel="stylesheet" href="test_files/libs/revealjs/dist/theme/quarto-2f366650f320edcfcf53d73c80250a32.css">
   <link rel="stylesheet" href="_static/styles.css">
-  <link href="uml_structure_diagrams_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="uml_structure_diagrams_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="uml_structure_diagrams_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="uml_structure_diagrams_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link href="test_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="test_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="test_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="test_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -127,322 +128,68 @@
   <div class="reveal">
     <div class="slides">
 
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Habits</h1>
 
-<section id="uml-structure-diagrams" class="title-slide slide level1 center">
-<h1>UML Structure Diagrams</h1>
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+John Doe 
+</div>
+</div>
+</div>
 
 </section>
-
 <section>
-<section id="overview-of-uml-structure-diagrams" class="title-slide slide level1 center">
-<h1>Overview of UML Structure Diagrams</h1>
+<section id="in-the-morning" class="title-slide slide level1 center">
+<h1>In the morning</h1>
 
 </section>
-<section id="what-are-structure-diagrams" class="slide level3">
-<h3>What are Structure Diagrams?</h3>
-<p>UML structure diagrams represent the <strong>static aspects</strong> of a system by:</p>
+<section id="getting-up" class="title-slide slide level2 center">
+<h2>Getting up</h2>
 <ul>
-<li>Visualizing system architecture and components</li>
-<li>Illustrating relationships and interactions between elements</li>
-<li>Documenting the structural foundation of software designs</li>
-<li>Providing a standardized notation for communication among stakeholders</li>
+<li>Turn off alarm</li>
+<li>Get out of bed</li>
 </ul>
 </section>
-<section id="types-of-structure-diagrams" class="slide level3">
-<h3>Types of Structure Diagrams</h3>
-<div class="smaller-75">
+
+<section id="breakfast" class="title-slide slide level2 center">
+<h2>Breakfast</h2>
 <ul>
-<li><strong>Class Diagram</strong>: The foundation of object-oriented modeling showing classes, attributes, methods, and relationships.</li>
-<li><strong>Object Diagram</strong>: Concrete examples of class structures providing snapshots of the system with actual data.</li>
-<li><strong>Package Diagram</strong>: High-level organization of system elements into cohesive packages with their dependencies.</li>
-<li><strong>Component Diagram</strong>: Modular system design showing building blocks and their interfaces with dependencies.</li>
-<li><strong>Composite Structure Diagram</strong>: Internal composition of elements illustrating how parts collaborate within a class.</li>
-<li><strong>Deployment Diagram</strong>: System implementation planning mapping software artifacts to physical hardware nodes.</li>
-<li><strong>Profile Diagram</strong>: Extensions to UML through custom stereotypes, tagged values, and constraints.</li>
+<li>Eat eggs</li>
+<li>Drink coffee</li>
 </ul>
-</div>
-</section></section>
+</section>
+<section id="get-dressed" class="slide level3">
+<h3>Get dressed</h3>
+<ul>
+<li>Brush teeth</li>
+<li>Take a shower</li>
+</ul>
+</section>
+</section>
 <section>
-<section id="uml-class-diagrams" class="title-slide slide level1 center">
-<h1>UML Class Diagrams</h1>
+<section id="in-the-evening" class="title-slide slide level1 center">
+<h1>In the evening</h1>
 
 </section>
-<section id="what-are-class-diagrams" class="slide level3">
-<h3>What are Class Diagrams?</h3>
-<div class="smaller-70">
-<p>Class diagrams are the <strong>foundation of object-oriented modeling</strong>, providing:</p>
+<section id="dinner" class="title-slide slide level2 center">
+<h2>Dinner</h2>
 <ul>
-<li>A blueprint of the system’s classes, attributes, methods, and relationships</li>
-<li>The static structure that underpins dynamic system behavior</li>
-<li>A powerful tool for communicating design decisions among stakeholders</li>
-<li>The most frequently used diagram type in UML</li>
+<li>Eat spaghetti</li>
+<li>Drink wine</li>
 </ul>
-<p><em>Class diagrams bridge the gap between conceptual models and actual implementation code.</em></p>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Key Uses</strong>: System architecture design, code generation, documentation, and database schema mapping</p>
-</div>
-</div>
-</div>
-</div>
 </section>
-<section id="hello" class="slide level3">
-<h3>Hello</h3>
-<div class="fragment current-visible absolute" style="top: 100px; left: 0px; ">
-<p>Fade out</p>
-</div>
-<div class="fragment current-visible absolute" style="top: 100px; left: 0px; ">
-<p>Highlight red</p>
-</div>
-<div class="fragment current-visible absolute" style="top: 100px; left: 0px; ">
-<p>hgfdhgfhfg</p>
-</div>
-</section></section>
-<section>
-<section id="uml-object-diagrams" class="title-slide slide level1 center">
-<h1>UML Object Diagrams</h1>
+
+<section id="going-to-sleep" class="title-slide slide level2 center">
+<h2>Going to sleep</h2>
+<ul>
+<li>Get in bed</li>
+<li>Count sheep</li>
+</ul>
 
 </section>
-<section id="what-are-object-diagrams" class="slide level3">
-<h3>What are Object Diagrams?</h3>
-<div class="smaller-70">
-<p>Object diagrams serve as <strong>concrete examples of class structures</strong>, offering:</p>
-<ul>
-<li>A snapshot of a system at a specific point in time with actual data</li>
-<li>Instances of classes (objects) rather than the classes themselves</li>
-<li>Real examples of relationships between objects with specific attribute values</li>
-<li>A way to validate class diagrams through concrete scenarios</li>
-</ul>
-<p><em>Object diagrams bring abstract class structures to life by showing them populated with actual data.</em></p>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Key Uses</strong>: Test case modeling, complex relationship explanation, prototype validation, and business scenario illustration</p>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="uml-package-diagrams" class="title-slide slide level1 center">
-<h1>UML Package Diagrams</h1>
-
 </section>
-<section id="what-are-package-diagrams" class="slide level3">
-<h3>What are Package Diagrams?</h3>
-<div class="smaller-70">
-<p>Package diagrams provide a <strong>high-level organization of system elements</strong>, showing:</p>
-<ul>
-<li>How related elements are grouped into cohesive units (packages)</li>
-<li>Dependencies and relationships between different packages</li>
-<li>The system’s logical architecture and namespace structure</li>
-<li>A way to manage complexity in large-scale systems</li>
-</ul>
-<p><em>Package diagrams help maintain clean architecture by organizing elements into manageable groups.</em></p>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Key Uses</strong>: Large system organization, dependency management, architecture layering, and module encapsulation planning</p>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="uml-component-diagrams" class="title-slide slide level1 center">
-<h1>UML Component Diagrams</h1>
-
-</section>
-<section id="what-are-component-diagrams" class="slide level3">
-<h3>What are Component Diagrams?</h3>
-<div class="smaller-70">
-<p>Component diagrams are <strong>essential for modular system design</strong>, showing:</p>
-<ul>
-<li>The building blocks of larger systems and their interfaces</li>
-<li>How components connect and interact through their provided and required interfaces</li>
-<li>Dependencies and relationships between major system modules</li>
-<li>A higher level of abstraction compared to class diagrams</li>
-</ul>
-<p><em>Component diagrams help developers understand how to assemble and replace parts of a system.</em></p>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Key Uses</strong>: System decomposition, third-party integration planning, reusable module identification, and architecture verification</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="references" class="slide level3">
-<h3>References</h3>
-<ul>
-<li><a href="https://www.omg.org/spec/UML/2.5/PDF">UML 2.5 Specification</a></li>
-<li><a href="https://www.lucidchart.com/pages/uml-component-diagram">UML Component Diagrams - Lucidchart</a></li>
-<li><a href="https://www.geeksforgeeks.org/component-based-diagram/">UML Component Diagrams - GeeksforGeeks</a></li>
-</ul>
-</section>
-<section id="components" class="slide level3 hide">
-<h3>Components</h3>
-<p><strong>Components</strong> are the fundamental building blocks representing modular parts of a system with well-defined interfaces.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><strong>Symbol</strong>: Rectangles with the <code>«component»</code> stereotype.</li>
-<li><strong>Function</strong>: Define and encapsulate functionality, ensuring modularity and reusability.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="../assets/uml/component_diagrams/component.svg"></p>
-</div></div>
-</section>
-<section id="interfaces" class="slide level3">
-<h3>Interfaces</h3>
-<p>The points where components interact with each other, typically represented as:</p>
-<p><strong>Symbols</strong>:</p>
-<ul>
-<li>Lollipop: notation (a circle on a stick) for provided interfaces</li>
-<li>Socket: notation (a semicircle on a stick) for required interfaces</li>
-</ul>
-<p><strong>Function</strong>: Define how components communicate with each other.</p>
-</section>
-<section id="dependencies" class="slide level3">
-<h3>Dependencies</h3>
-<p>Relationships between components shown as dashed arrows pointing from the dependent component to the dependency.</p>
-</section>
-<section id="ports" class="slide level3">
-<h3>Ports</h3>
-<p>Specific interaction points on components that encapsulate the component’s interaction with the outside world.</p>
-</section>
-<section id="connectors" class="slide level3">
-<h3>Connectors</h3>
-<p>Links between components that show how components are wired together, typically connecting required interfaces to provided interfaces.</p>
-</section>
-<section id="artifacts" class="slide level3">
-<h3>Artifacts</h3>
-<p>Physical manifestations of components such as executable files, libraries, or documentation.</p>
-</section>
-<section id="packages" class="slide level3">
-<h3>Packages</h3>
-<p>Organizational elements that group related components together.</p>
-</section></section>
-<section>
-<section id="uml-composite-structure-diagrams" class="title-slide slide level1 center">
-<h1>UML Composite Structure Diagrams</h1>
-
-</section>
-<section id="what-are-composite-structure-diagrams" class="slide level3">
-<h3>What are Composite Structure Diagrams?</h3>
-<div class="smaller-70">
-<p>Composite structure diagrams provide <strong>insight into the internal composition of elements</strong>, illustrating:</p>
-<ul>
-<li>The internal arrangement of a class and its collaborating parts</li>
-<li>How parts are connected through ports and interfaces</li>
-<li>Runtime instance configurations and compositions</li>
-<li>Complex relationships between internal structures</li>
-</ul>
-<p><em>Composite structure diagrams reveal how components work together to implement the behavior of the containing classifier.</em></p>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Key Uses</strong>: Design pattern implementation, complex class structure visualization, runtime architecture modeling, and collaboration specification</p>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="uml-deployment-diagrams" class="title-slide slide level1 center">
-<h1>UML Deployment Diagrams</h1>
-
-</section>
-<section id="what-are-deployment-diagrams" class="slide level3">
-<h3>What are Deployment Diagrams?</h3>
-<div class="smaller-70">
-<p>Deployment diagrams are <strong>critical for system implementation planning</strong>, providing:</p>
-<ul>
-<li>A map of how software artifacts are assigned to hardware nodes</li>
-<li>The physical architecture and topology of a system</li>
-<li>Communication paths between processing nodes</li>
-<li>A view of runtime processing environments and their configurations</li>
-</ul>
-<p><em>Deployment diagrams help teams plan hardware requirements and understand distributed system architectures.</em></p>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Key Uses</strong>: Infrastructure planning, system optimization, deployment strategy development, and physical architecture documentation</p>
-</div>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="uml-profile-diagrams" class="title-slide slide level1 center">
-<h1>UML Profile Diagrams</h1>
-
-</section>
-<section id="what-are-profile-diagrams" class="slide level3">
-<h3>What are Profile Diagrams?</h3>
-<div class="smaller-70">
-<p>Profile diagrams provide <strong>extensions to the UML language</strong> itself, offering:</p>
-<ul>
-<li>Custom stereotypes, tagged values, and constraints that extend standard UML elements</li>
-<li>Tailoring of UML for specific domains, platforms, or methodologies</li>
-<li>Precise definition of semantics for model elements in particular contexts</li>
-<li>Standardized extensions that maintain compatibility with core UML</li>
-</ul>
-<p><em>Profile diagrams customize UML for specialized domains while preserving its fundamental structure and notation.</em></p>
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Tip</strong></p>
-</div>
-<div class="callout-content">
-<p>Key Uses: Industry-specific modeling standards, platform-specific modeling, consistency enforcement, tooling support enhancement, and modeling practice standardization</p>
-</div>
-</div>
-</div>
-</div>
-
-</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -451,19 +198,19 @@
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="uml_structure_diagrams_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="test_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="uml_structure_diagrams_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="uml_structure_diagrams_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="uml_structure_diagrams_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="uml_structure_diagrams_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="uml_structure_diagrams_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="test_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="test_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="test_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="test_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="test_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="uml_structure_diagrams_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="uml_structure_diagrams_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="uml_structure_diagrams_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="uml_structure_diagrams_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="test_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="test_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="test_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="test_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

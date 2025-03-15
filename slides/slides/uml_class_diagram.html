@@ -6,8 +6,8 @@
 <script src="uml_class_diagram_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="uml_class_diagram_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="uml_class_diagram_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="uml_class_diagram_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.40">
+<link href="uml_class_diagram_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.42">
 
   <title>UML Class Diagram</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -93,7 +93,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="uml_class_diagram_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <link rel="stylesheet" href="uml_class_diagram_files/libs/revealjs/dist/theme/quarto-2f366650f320edcfcf53d73c80250a32.css">
   <link rel="stylesheet" href="_static/styles.css">
   <link href="uml_class_diagram_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="uml_class_diagram_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -209,7 +209,7 @@
 <h2>Classifiers</h2>
 <p>In UML (Unified Modeling Language), a <strong>classifier</strong> is a broad term for an element that defines both behavioral and structural features. Classifiers serve as high-level abstractions that represent groups of objects (or other entities) sharing common characteristics.</p>
 </section>
-<section id="common-classifiers" class="title-slide slide level3 hide center">
+<section id="common-classifiers" class="slide level3 hide">
 <h3>Common Classifiers</h3>
 <p>Examples of classifiers in UML include, but are not limited to:</p>
 <div class="smaller-80">
@@ -231,8 +231,7 @@
 <li><strong>Subsystems</strong>: Groupings of model elements representing a larger unit of functionality.</li>
 </ul>
 </div>
-</section>
-</section>
+</section></section>
 <section>
 <section id="class" class="title-slide slide level2 hide center">
 <h2>Class</h2>
@@ -262,7 +261,7 @@
 </div>
 </div>
 </section>
-<section id="visibility-markers" class="title-slide slide level3 hide center">
+<section id="visibility-markers" class="slide level3 hide">
 <h3>Visibility Markers</h3>
 <div class="smaller-80">
 <p><strong>Visibility markers</strong> indicate the accessibility of attributes and methods within a class.</p>
@@ -292,8 +291,7 @@
 </div>
 </div>
 </section>
-
-<section id="attributes" class="title-slide slide level3 hide center">
+<section id="attributes" class="slide level3 hide">
 <h3>Attributes</h3>
 <div class="smaller-80">
 <p><strong>Attributes</strong> in a UML class diagram represent the properties or data fields of a class. They are typically written in the following format:</p>
@@ -326,8 +324,7 @@
 </div>
 </div>
 </section>
-
-<section id="methods" class="title-slide slide level3 hide center">
+<section id="methods" class="slide level3 hide">
 <h3>Methods</h3>
 <div class="smaller-80">
 <p><strong>Methods</strong> (also called operations) in a UML class diagram represent the functions or behaviors that a class can perform. They are typically written in the following format:</p>
@@ -358,8 +355,7 @@
 </div>
 </div>
 </section>
-
-<section id="abstract-class" class="title-slide slide level3 hide center">
+<section id="abstract-class" class="slide level3 hide">
 <h3>Abstract Class</h3>
 <div class="smaller-80">
 <p>An <strong>abstract class</strong> serves as a blueprint for other classes, allowing shared behavior while preventing direct instantiation. It may contain both abstract methods (without implementation) and concrete methods (with implementation). In UML, abstract classes appear as class rectangles with the class name <em>italicized</em>.</p>
@@ -380,8 +376,7 @@
 </div>
 </div>
 </div>
-</section>
-</section>
+</section></section>
 <section id="interface" class="title-slide slide level2 hide center">
 <h2>Interface</h2>
 <div class="smaller-80">
@@ -445,7 +440,7 @@
 <h2>Relationships</h2>
 
 </section>
-<section id="overview-1" class="title-slide slide level3 hide center">
+<section id="overview-1" class="slide level3 hide">
 <h3>Overview</h3>
 <div class="smaller-70">
 <p>Classes in UML can be connected through six main types of <strong>relationships</strong>: <em>association</em>, <em>aggregation</em>, <em>composition</em>, <em>inheritance</em>, <em>implementation</em>, and <em>dependency</em>.</p>
@@ -481,8 +476,7 @@
 </div>
 </div>
 </section>
-
-<section id="association" class="title-slide slide level3 hide center">
+<section id="association" class="slide level3 hide">
 <h3>Association</h3>
 <p><strong>Association</strong> defines a structural relationship between two classes, linking their instances without implying ownership or lifecycle dependencies. It can be bidirectional or unidirectional.</p>
 <p><strong>Example</strong>: An <code>Employee</code> class is associated with a <code>Company</code> class, where employees work for a company, and a company has multiple employees. Both remain independent entities while referencing each other.</p>
@@ -503,8 +497,7 @@
 </div>
 </div>
 </section>
-
-<section id="aggregation" class="title-slide slide level3 hide center">
+<section id="aggregation" class="slide level3 hide">
 <h3>Aggregation</h3>
 <p><strong>Aggregation</strong> represents a “has-a” relationship where one class (the whole) contains references to another class (the part), but the part can exist independently and has its own lifecycle. It is a weaker whole-part relationship without ownership.</p>
 <p><strong>Example</strong>: A <code>Car</code> has an aggregation relationship with an <code>Engine</code>. A <code>Car</code> contains an <code>Engine</code>, but the <code>Engine</code> can exist independently and be used in another <code>Car</code> or elsewhere.</p>
@@ -525,8 +518,7 @@
 </div>
 </div>
 </section>
-
-<section id="composition" class="title-slide slide level3 hide center">
+<section id="composition" class="slide level3 hide">
 <h3>Composition</h3>
 <p><strong>Composition</strong> represents a strong “has-a” relationship where the part cannot exist independently of the whole. If the whole is destroyed, its parts are also destroyed.</p>
 <p><strong>Example</strong>: A <code>House</code> has a composition relationship with a <code>Room</code>. A <code>House</code> contains <code>Rooms</code>, but a <code>Room</code> cannot exist without a <code>House</code>.</p>
@@ -547,8 +539,7 @@
 </div>
 </div>
 </section>
-
-<section id="generalization" class="title-slide slide level3 hide center">
+<section id="generalization" class="slide level3 hide">
 <h3>Generalization</h3>
 <p><strong>Generalization</strong>, also known as <strong>inheritance</strong> in programming, represents an “is-a” relationship where a subclass inherits the attributes and methods of a superclass. This allows for code reuse and hierarchical organization of classes.</p>
 <div>
@@ -578,8 +569,7 @@
 </div>
 </div>
 </section>
-
-<section id="realization" class="title-slide slide level3 hide center">
+<section id="realization" class="slide level3 hide">
 <h3>Realization</h3>
 <div class="smaller-75">
 <p><strong>Realization</strong>, also known as <strong>implementation</strong> in programming, represents a relationship between a class and an interface, where the class commits to implementing the methods defined in the interface.</p>
@@ -602,8 +592,7 @@
 </div>
 </div>
 </section>
-
-<section id="dependency" class="title-slide slide level3 hide center">
+<section id="dependency" class="slide level3 hide">
 <h3>Dependency</h3>
 <div class="smaller-85">
 <p><strong>Dependency</strong> represents a “uses” relationship where one class (the client) relies on another class (the supplier) to perform a task. Changes to the supplier class may impact the client class, but the dependency is typically weak and temporary.</p>
@@ -625,8 +614,7 @@
 </div>
 </div>
 </div>
-</section>
-</section>
+</section></section>
 <section>
 <section id="multiplicity" class="title-slide slide level2 hide center">
 <h2>Multiplicity</h2>
@@ -641,7 +629,7 @@
 </ul>
 </div>
 </section>
-<section id="example" class="title-slide slide level3 hide center">
+<section id="example" class="slide level3 hide">
 <h3>Example</h3>
 <p>Let’s look at an example for a hypothetical banking system, involving a Customer and Account. In this example we will assume a simple association between the two classes.</p>
 <div>
@@ -661,8 +649,7 @@
 </div>
 </div>
 </section>
-
-<section id="example-contd" class="title-slide slide level3 hide center">
+<section id="example-contd" class="slide level3 hide">
 <h3>Example (cont’d)</h3>
 <div class="smaller-85">
 <p>Let’s consider the relation between the customer and the account.</p>
@@ -702,8 +689,7 @@
 </div>
 </div>
 </section>
-
-<section id="example-contd-1" class="title-slide slide level3 hide center">
+<section id="example-contd-1" class="slide level3 hide">
 <h3>Example (cont’d)</h3>
 <div class="smaller-85">
 <p>Now, we consider the relation between bank account and customer.</p>
@@ -742,8 +728,7 @@
 </div>
 </div>
 </section>
-
-<section id="example-contd-2" class="title-slide slide level3 hide center">
+<section id="example-contd-2" class="slide level3 hide">
 <h3>Example (cont’d)</h3>
 <div class="smaller-85">
 <p>Finally, we can combine both multiplicities into the same diagram to express both directions:</p>
@@ -777,14 +762,13 @@
 </div>
 </div>
 </div>
-</section>
-</section>
+</section></section>
 <section>
 <section id="stereotypes" class="title-slide slide level2 center">
 <h2>Stereotypes</h2>
 
 </section>
-<section id="overview-2" class="title-slide slide level3 hide center">
+<section id="overview-2" class="slide level3 hide">
 <h3>Overview</h3>
 <div class="smaller-85">
 <p><strong>Stereotypes</strong> are UML extension mechanisms that classify and add specific meaning to model elements. They appear enclosed in guillemets (<code>«</code> and <code>»</code>) and are typically placed above or before the element name. Stereotypes modify the semantics of model elements by indicating specialized types with distinct properties and behaviors.</p>
@@ -819,8 +803,7 @@
 </div>
 </div>
 </section>
-
-<section id="stereotypes-contd" class="title-slide slide level3 hide center">
+<section id="stereotypes-contd" class="slide level3 hide">
 <h3>Stereotypes (cont’d)</h3>
 <p>Examples include <code>«entity»</code>, <code>«boundary»</code>, and <code>«control»</code> from the GRASP (General Responsibility Assignment Software Patterns) patterns, which distinguish different roles in a system. These represent true extensions to the base UML vocabulary.</p>
 <div>
@@ -840,8 +823,7 @@
 </div>
 </div>
 </section>
-
-<section id="built-in-keywords" class="title-slide slide level3 hide center">
+<section id="built-in-keywords" class="slide level3 hide">
 <h3>Built-in Keywords</h3>
 <div class="smaller-85">
 <p>It’s important to note that UML also includes <strong>built-in keywords</strong> that use the same guillemet notation but represent core language constructs rather than extensions.</p>
@@ -864,12 +846,11 @@
 </div>
 </div>
 
-</section>
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>Software Engineering (EECE3093C / CS3093C)</p>
+
 </div>
 </div></div>
 

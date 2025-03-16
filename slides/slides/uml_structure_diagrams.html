@@ -150,7 +150,7 @@
 </section>
 <section id="types-of-structure-diagrams" class="slide level3">
 <h3>Types of Structure Diagrams</h3>
-<div class="smaller-75">
+<div class="smaller-70">
 <ul>
 <li><strong>Class Diagram</strong>: The foundation of object-oriented modeling showing classes, attributes, methods, and relationships.</li>
 <li><strong>Object Diagram</strong>: Concrete examples of class structures providing snapshots of the system with actual data.</li>
@@ -166,6 +166,9 @@
 <section id="uml-class-diagrams" class="title-slide slide level1 center">
 <h1>UML Class Diagrams</h1>
 
+</section>
+<section id="example" class="slide level3">
+<h3>Example</h3>
 </section>
 <section id="what-are-class-diagrams" class="slide level3">
 <h3>What are Class Diagrams?</h3>
@@ -241,17 +244,24 @@
 <h1>UML Package Diagrams</h1>
 
 </section>
-<section id="what-are-package-diagrams" class="slide level3">
+<section id="example-1" class="slide level3" data-background-image="./assets/uml/package_diagrams/package_diagram.svg" data-background-size="contain">
+<h3>Example</h3>
+</section>
+<section id="what-are-package-diagrams" class="slide level3 hide" data-background-image="./assets/uml/package_diagrams/package_diagram.svg" data-background-size="contain" data-background-opacity="0.15">
 <h3>What are Package Diagrams?</h3>
 <div class="smaller-70">
-<p>Package diagrams provide a <strong>high-level organization of system elements</strong>, showing:</p>
+<div class="fragment">
+<p><strong>Package diagrams</strong> show the dependencies between different packages in a system, providing a <strong>high-level organization of system elements</strong>. They help maintain clean architecture by organizing elements into manageable groups.</p>
+</div>
+<div class="fragment tight">
+<p>Package diagrams are used to show:</p>
 <ul>
 <li>How related elements are grouped into cohesive units (packages)</li>
 <li>Dependencies and relationships between different packages</li>
 <li>The system’s logical architecture and namespace structure</li>
-<li>A way to manage complexity in large-scale systems</li>
 </ul>
-<p><em>Package diagrams help maintain clean architecture by organizing elements into manageable groups.</em></p>
+</div>
+<div class="fragment">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -261,8 +271,66 @@
 <p><strong>Tip</strong></p>
 </div>
 <div class="callout-content">
-<p><strong>Key Uses</strong>: Large system organization, dependency management, architecture layering, and module encapsulation planning</p>
+<p><strong>Key Uses</strong>: Large system organization, dependency management, and architecture layering</p>
 </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="package-notation" class="slide level3">
+<h3>Package Notation</h3>
+<div class="smaller-75">
+<p>Packages can be represented by the notations as shown here:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./assets/uml/package_diagrams/package_notations.svg" class="quarto-figure quarto-figure-center" width="600"></p>
+</figure>
+</div>
+<p>Fully qualified name of a package has the following syntax:</p>
+<div class="r-stack">
+<p><code>Name owing the package::Name of the package</code></p>
+</div>
+<p>For example:</p>
+<div class="r-stack">
+<p><code>java::util::Date</code></p>
+</div>
+</div>
+</section>
+<section id="dependency-notation" class="slide level3">
+<h3>Dependency Notation</h3>
+<div class="smaller-70">
+<p>Package diagrams illustrate the organization and dependencies among packages in your system. Each dependency between packages is represented by a dashed line with an arrow pointing from the dependent package to the package being depended upon, often annotated with a stereotype (<code>&lt;&lt;stereotype&gt;&gt;</code>) that specifies the type of dependency.</p>
+<div class="fragment current-visible absolute" style="left: 0px; ">
+<p><strong>Use (<code>&lt;&lt;use&gt;&gt;</code>):</strong> One package depends on another package’s functionality to work properly. It’s a general form of dependency.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./assets/uml/package_diagrams/use_dependency.svg" class="quarto-figure quarto-figure-center" width="600"></p>
+</figure>
+</div>
+</div>
+<div class="fragment current-visible absolute" style="left: 0px; ">
+<p><strong>Import (<code>&lt;&lt;import&gt;&gt;</code>):</strong> One package directly includes public parts of another package, treating them as its own elements.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./assets/uml/package_diagrams/import_dependency.svg" class="quarto-figure quarto-figure-center" width="600"></p>
+</figure>
+</div>
+</div>
+<div class="fragment current-visible absolute" style="left: 0px; ">
+<p><strong>Access (<code>&lt;&lt;access&gt;&gt;</code>):</strong> One package can see and use the public parts of another package without directly importing them.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./assets/uml/package_diagrams/access_dependency.svg" class="quarto-figure quarto-figure-center" width="600"></p>
+</figure>
+</div>
+</div>
+<div class="fragment current-visible absolute" style="left: 0px; ">
+<p><strong>Merge (<code>&lt;&lt;merge&gt;&gt;</code>):</strong> One package combines completely with another package, merging their contents into one.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./assets/uml/package_diagrams/merge_dependency.svg" class="quarto-figure quarto-figure-center" width="600"></p>
+</figure>
 </div>
 </div>
 </div>
@@ -272,17 +340,24 @@
 <h1>UML Component Diagrams</h1>
 
 </section>
-<section id="what-are-component-diagrams" class="slide level3">
-<h3>What are Component Diagrams?</h3>
-<div class="smaller-70">
-<p>Component diagrams are <strong>essential for modular system design</strong>, showing:</p>
+<section id="example-2" class="slide level3" data-background-image="./assets/uml/component_diagrams/component_diagram.svg" data-background-size="contain">
+<h3>Example</h3>
+</section>
+<section id="what-are-they" class="slide level3 hide" data-background-image="./assets/uml/component_diagrams/component_diagram.svg" data-background-size="contain" data-background-opacity="0.2">
+<h3>What are they?</h3>
+<div class="smaller-75">
+<div class="fragment">
+<p>UML <strong>Component Diagrams</strong> are used to model the high-level software components and subsystems in service-oriented architectures and component-based development projects, and more importantly, define the interfaces between those components.</p>
+</div>
+<div class="fragment tight">
+<p>The are <strong>essential for modular system design</strong>, showing:</p>
 <ul>
 <li>The building blocks of larger systems and their interfaces</li>
 <li>How components connect and interact through their provided and required interfaces</li>
 <li>Dependencies and relationships between major system modules</li>
-<li>A higher level of abstraction compared to class diagrams</li>
 </ul>
-<p><em>Component diagrams help developers understand how to assemble and replace parts of a system.</em></p>
+</div>
+<div class="fragment">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -293,6 +368,7 @@
 </div>
 <div class="callout-content">
 <p><strong>Key Uses</strong>: System decomposition, third-party integration planning, reusable module identification, and architecture verification</p>
+</div>
 </div>
 </div>
 </div>
@@ -309,45 +385,139 @@
 <section id="components" class="slide level3 hide">
 <h3>Components</h3>
 <p><strong>Components</strong> are the fundamental building blocks representing modular parts of a system with well-defined interfaces.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[[60,-10,30]]">
+<div class="quarto-layout-row">
+<div id="first-column" class="smaller-80 quarto-layout-cell" style="flex-basis: 60.0%;justify-content: flex-start;">
 <ul>
-<li><strong>Symbol</strong>: Rectangles with the <code>«component»</code> stereotype.</li>
 <li><strong>Function</strong>: Define and encapsulate functionality, ensuring modularity and reusability.</li>
+<li><strong>Symbol</strong>: Rectangles with the <code>«Component»</code> stereotype.</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="../assets/uml/component_diagrams/component.svg"></p>
-</div></div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
+<p><img data-src="./assets/uml/component_diagrams/component.svg"></p>
+</div>
+</div>
+</div>
 </section>
-<section id="interfaces" class="slide level3">
+<section id="interfaces" class="slide level3 hide">
 <h3>Interfaces</h3>
-<p>The points where components interact with each other, typically represented as:</p>
-<p><strong>Symbols</strong>:</p>
+<p><strong>Iterfaces</strong> define a contract or set of operations that a component promises to provide or requires from other components, typically represented as:</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[[70,-10,20]]">
+<div class="quarto-layout-row">
+<div id="first-column" class="tight smaller-75 quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
 <ul>
-<li>Lollipop: notation (a circle on a stick) for provided interfaces</li>
-<li>Socket: notation (a semicircle on a stick) for required interfaces</li>
+<li><strong>Function</strong>: Define how components communicate with each other.</li>
+<li><strong>Symbols</strong>:
+<ul>
+<li><strong><em>Provided</em></strong>: Complete circle (“lollipop”) at the end represent an interface that the component provides</li>
+<li><strong><em>Required</em></strong>: Half circle (“socket”) at the end represent an interface that the component requires</li>
+</ul></li>
 </ul>
-<p><strong>Function</strong>: Define how components communicate with each other.</p>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<p><img data-src="./assets/uml/component_diagrams/interface.svg"></p>
+</div>
+</div>
+</div>
 </section>
-<section id="dependencies" class="slide level3">
-<h3>Dependencies</h3>
-<p>Relationships between components shown as dashed arrows pointing from the dependent component to the dependency.</p>
-</section>
-<section id="ports" class="slide level3">
+<section id="ports" class="slide level3 hide">
 <h3>Ports</h3>
-<p>Specific interaction points on components that encapsulate the component’s interaction with the outside world.</p>
+<p><strong>Ports</strong> are the defined interaction points on the boundary of a component where access to interfaces is provided or required.</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[[70,-10,20]]">
+<div class="quarto-layout-row">
+<div id="first-column" class="smaller-80 quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
+<ul>
+<li><strong>Function</strong>: Encapsulate how the component interacts with the outside world.</li>
+<li><strong>Symbol</strong>: Small squares on the component boundary.</li>
+</ul>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Ports are more common on subsystems as they help manage and organize the potentially numerous interfaces that a subsystem might expose.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<p><img data-src="./assets/uml/component_diagrams/ports.svg"></p>
+</div>
+</div>
+</div>
 </section>
-<section id="connectors" class="slide level3">
-<h3>Connectors</h3>
-<p>Links between components that show how components are wired together, typically connecting required interfaces to provided interfaces.</p>
+<section id="relationships" class="slide level3 hide">
+<h3>Relationships</h3>
+<p><strong>Relationships</strong> depict the connections and dependencies between components and interfaces.</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[[50,-10,40]]">
+<div class="quarto-layout-row">
+<div id="first-column" class="smaller-55 tight quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<ul>
+<li><strong>Function</strong>: Depict how components interact and depend on each other, highlighting communication paths and potential points of failure.</li>
+<li><strong>Symbol</strong>: Various line and arrow notations.
+<ul>
+<li><strong><em>Dependency</em></strong>: Dashed line with arrow indicates that one component relies on another.</li>
+<li><strong><em>Association</em></strong>: Solid line without arrow depicts a permanent relationship between components.</li>
+<li><strong><em>Assembly Connector</em></strong>: Dashed line connecting a required interface (socket) to a provided interface (lollipop), showing interface implementation.</li>
+</ul></li>
+</ul>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 40.0%;justify-content: center;">
+<p><img data-src="./assets/uml/component_diagrams/relationships.svg"></p>
+</div>
+</div>
+</div>
 </section>
-<section id="artifacts" class="slide level3">
+<section id="artifacts" class="slide level3 hide">
 <h3>Artifacts</h3>
-<p>Physical manifestations of components such as executable files, libraries, or documentation.</p>
-</section>
-<section id="packages" class="slide level3">
-<h3>Packages</h3>
-<p>Organizational elements that group related components together.</p>
+<p><strong>Artifacts</strong> represent physical files or data, such as executable files, libraries, or documentation, that are deployed on nodes.</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[[70,-10,20]]">
+<div class="quarto-layout-row">
+<div id="first-column" class="smaller-75 quarto-layout-cell" style="flex-basis: 70.0%;justify-content: flex-start;">
+<ul>
+<li><strong>Function</strong>: Show how software artifacts, like executables or data files, relate to the components.</li>
+<li><strong>Symbol</strong>: Rectangles with the <code>&lt;&lt;artifact&gt;&gt;</code> stereotype.</li>
+</ul>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 10.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div id="second-column" class="quarto-layout-cell" style="flex-basis: 20.0%;justify-content: center;">
+<p><img data-src="./assets/uml/component_diagrams/artifact.svg"></p>
+</div>
+</div>
+</div>
 </section></section>
 <section>
 <section id="uml-composite-structure-diagrams" class="title-slide slide level1 center">

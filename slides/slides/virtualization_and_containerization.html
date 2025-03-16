@@ -6,8 +6,8 @@
 <script src="virtualization_and_containerization_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="virtualization_and_containerization_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="virtualization_and_containerization_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="virtualization_and_containerization_files/libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.40">
+<link href="virtualization_and_containerization_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.42">
 
   <title>Virtualization and Containerization</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -28,7 +28,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="virtualization_and_containerization_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <link rel="stylesheet" href="virtualization_and_containerization_files/libs/revealjs/dist/theme/quarto-2f366650f320edcfcf53d73c80250a32.css">
   <link rel="stylesheet" href="_static/styles.css">
   <link href="virtualization_and_containerization_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="virtualization_and_containerization_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -233,21 +233,19 @@
 <h2>Difference Between Containerization vs Virtualization</h2>
 
 </section>
-<section id="architecture" class="title-slide slide level3 center">
+<section id="architecture" class="slide level3">
 <h3>Architecture</h3>
 <div class="smaller-85">
 <p>In virtualization, a hypervisor lets several virtual machines (VMs) run on one physical server, but each VM requires its own whole OS. That creates resource overhead.</p>
 <p>Containerization, on the other hand, shares a host system’s OS kernel. Containers are lighter because they don’t require OS instances, which means less overhead and faster performance.</p>
 </div>
 </section>
-
-<section id="performance" class="title-slide slide level3 center">
+<section id="performance" class="slide level3">
 <h3>Performance</h3>
 <div class="smaller-85">
 <p>Containers do not need to boot an entire OS and therefore can start in seconds, versus the often-cited minutes it takes a VM to launch. That’s because they consume fewer resources, such as CPU, and memory — perfect for environments requiring efficiency in resource utilization and rapid scaling, such as microservices or applications running in the cloud.</p>
 </div>
-</section>
-</section>
+</section></section>
 <section id="scalability" class="title-slide slide level2 center">
 <h2>Scalability</h2>
 <div class="smaller-85">
@@ -360,27 +358,25 @@
 </ul>
 </div>
 </section>
-<section id="virtual-machines-vms" class="title-slide slide level3 center">
+<section id="virtual-machines-vms" class="slide level3">
 <h3>Virtual Machines (VMs)</h3>
 <p><strong>How it works:</strong> A VM virtualizes an entire computer, including hardware. It runs a full OS that is independent of the host OS.</p>
 <p><strong>Example:</strong> - You have a <strong>MacBook running macOS</strong>. - You install <strong>VirtualBox, VMware, or Parallels</strong>. - You create a <strong>Windows VM</strong> inside it. - This VM runs a full copy of <strong>Windows</strong>, even though your MacBook runs <strong>macOS</strong>. - You could also create a <strong>Linux VM</strong> in the same way. - The <strong>guest OS (Windows/Linux) does not rely on macOS</strong>—it runs as if it were on its own hardware.</p>
 <p><strong>Key Takeaway:</strong> <br> ✔ A VM <strong>does not require</strong> the guest OS to match the host OS. <br> ✔ You can run <strong>Windows on a Mac</strong> or <strong>Linux on Windows</strong> using a VM.</p>
 </section>
-
-<section id="containers" class="title-slide slide level3 center">
+<section id="containers" class="slide level3">
 <h3>Containers</h3>
 <p><strong>How it works:</strong> A container <strong>does not</strong> include its own OS kernel. Instead, it shares the <strong>host OS kernel</strong> while running isolated applications.</p>
 <p><strong>Example: Running Linux Containers on a Mac</strong> - You have a <strong>MacBook running macOS</strong>. - You install <strong>Docker</strong>. - You create a <strong>Linux container</strong> (e.g., an Ubuntu-based container). - This container runs <strong>Linux user space applications</strong>, but <strong>it does not have its own Linux kernel</strong>. - Instead, <strong>Docker Desktop runs a lightweight Linux VM</strong> behind the scenes on macOS, allowing the container to work.</p>
 <p><strong>Example: Running Windows Containers on Windows</strong> - You have a <strong>Windows machine</strong>. - You install <strong>Docker</strong>. - You create a <strong>Windows-based container</strong>. - This container <strong>must use the Windows kernel</strong>—it <strong>cannot run Linux applications</strong> directly.</p>
 <p><strong>Key Takeaway:</strong> <br> ✔ Containers <strong>must use</strong> a kernel that matches the host OS (or a compatible virtualization layer like Docker on macOS). <br> ✔ You <strong>cannot run</strong> a Windows container on Linux or vice versa without extra compatibility layers. <br> ✔ However, you <strong>can run multiple containerized applications</strong> inside a container environment (e.g., a <strong>Node.js app in one container</strong> and a <strong>MySQL database in another</strong>).</p>
-</section>
-</section>
+</section></section>
 <section>
 <section id="use-cases-of-containerization" class="title-slide slide level2 center">
 <h2>Use Cases of Containerization</h2>
 <p>Containerization is ideal for modern agile development and operations due to its scalability, efficiency, and portability. Containers package applications with dependencies inside isolated environments, enabling flexible and rapid deployment.</p>
 </section>
-<section id="cloud-native-applications" class="title-slide slide level3 center">
+<section id="cloud-native-applications" class="slide level3">
 <h3>Cloud-Native Applications</h3>
 <ul>
 <li>Highly portable and scalable across cloud platforms.</li>
@@ -388,8 +384,7 @@
 <li>Efficient resource utilization in cloud environments.</li>
 </ul>
 </section>
-
-<section id="microservices-architectures" class="title-slide slide level3 center">
+<section id="microservices-architectures" class="slide level3">
 <h3>Microservices Architectures</h3>
 <ul>
 <li>Breaks monolithic applications into independent microservices.</li>
@@ -397,13 +392,11 @@
 <li>Enhances flexibility, allowing updates without impacting the entire system.</li>
 </ul>
 </section>
-
-<section id="microservices-visualization" class="title-slide slide level3 center">
+<section id="microservices-visualization" class="slide level3">
 <h3>Microservices Visualization</h3>
 
 <img data-src="assets/monolithic-and-microservices-architecture.png" class="r-stretch"></section>
-
-<section id="cicd-pipelines" class="title-slide slide level3 center">
+<section id="cicd-pipelines" class="slide level3">
 <h3>CI/CD Pipelines</h3>
 <ul>
 <li>Ensures consistency across development, testing, and production.</li>
@@ -411,22 +404,20 @@
 <li>Reduces environment-specific issues, leading to faster iterations and reliable releases.</li>
 </ul>
 </section>
-
-<section id="devops-practices" class="title-slide slide level3 center">
+<section id="devops-practices" class="slide level3">
 <h3>DevOps Practices</h3>
 <ul>
 <li>Central to infrastructure automation with tools like Kubernetes.</li>
 <li>Supports Infrastructure-as-Code (IaC) for automated deployment and management.</li>
 <li>Enhances collaboration by providing a consistent runtime for development and operations teams.</li>
 </ul>
-</section>
-</section>
+</section></section>
 <section>
 <section id="use-cases-of-virtualization" class="title-slide slide level2 center">
 <h2>Use Cases of Virtualization</h2>
 <p>Virtualization is ideal for scenarios requiring full OS environments, resource-intensive applications, or enhanced security. By using hypervisors, multiple OS instances can run on a single physical machine, offering strong isolation and versatility.</p>
 </section>
-<section id="legacy-applications" class="title-slide slide level3 center">
+<section id="legacy-applications" class="slide level3">
 <h3>Legacy Applications</h3>
 <ul>
 <li>Many legacy apps are not containerizable.</li>
@@ -434,8 +425,7 @@
 <li>Allows running old software on modern infrastructure without modification.</li>
 </ul>
 </section>
-
-<section id="resource-consolidation" class="title-slide slide level3 center">
+<section id="resource-consolidation" class="slide level3">
 <h3>Resource Consolidation</h3>
 <ul>
 <li>Enables multiple OS instances to share a single physical server.</li>
@@ -443,8 +433,7 @@
 <li>Ideal for organizations running diverse applications on different OSes.</li>
 </ul>
 </section>
-
-<section id="high-security-environments" class="title-slide slide level3 center">
+<section id="high-security-environments" class="slide level3">
 <h3>High-Security Environments</h3>
 <ul>
 <li>Strong isolation between applications and the host system.</li>
@@ -452,22 +441,20 @@
 <li>Preferred in industries demanding high-security measures.</li>
 </ul>
 </section>
-
-<section id="multi-os-support" class="title-slide slide level3 center">
+<section id="multi-os-support" class="slide level3">
 <h3>Multi-OS Support</h3>
 <ul>
 <li>Allows running different operating systems on a single hardware setup.</li>
 <li>Supports applications that require both Windows and Linux environments.</li>
 <li>Provides flexibility for software development and testing across multiple OSes.</li>
 </ul>
-</section>
-</section>
+</section></section>
 <section>
 <section id="when-to-use-virtualization" class="title-slide slide level2 center">
 <h2>When to Use Virtualization?</h2>
 <p>Virtualization optimizes resources, enhances application management, and enables multiple operating systems to run on a single server. It provides isolation, flexibility, and efficient resource allocation.</p>
 </section>
-<section id="running-multiple-operating-systems" class="title-slide slide level3 center">
+<section id="running-multiple-operating-systems" class="slide level3">
 <h3>Running Multiple Operating Systems</h3>
 <ul>
 <li>Ideal when different applications require different OS environments.</li>
@@ -475,8 +462,7 @@
 <li>Maximizes hardware efficiency while maintaining software flexibility.</li>
 </ul>
 </section>
-
-<section id="supporting-legacy-applications" class="title-slide slide level3 center">
+<section id="supporting-legacy-applications" class="slide level3">
 <h3>Supporting Legacy Applications</h3>
 <ul>
 <li>Legacy applications often require full OS environments.</li>
@@ -484,8 +470,7 @@
 <li>Ensures business continuity without rewriting old applications.</li>
 </ul>
 </section>
-
-<section id="security-and-isolation" class="title-slide slide level3 center">
+<section id="security-and-isolation" class="slide level3">
 <h3>Security and Isolation</h3>
 <ul>
 <li>Strong isolation ensures workloads remain separate.</li>
@@ -493,22 +478,20 @@
 <li>Essential for high-security industries like finance and healthcare.</li>
 </ul>
 </section>
-
-<section id="maximizing-hardware-utilization" class="title-slide slide level3 center">
+<section id="maximizing-hardware-utilization" class="slide level3">
 <h3>Maximizing Hardware Utilization</h3>
 <ul>
 <li>Reduces the number of physical servers required.</li>
 <li>Lowers energy consumption and simplifies management.</li>
 <li>Allows multiple workloads to share the same hardware efficiently.</li>
 </ul>
-</section>
-</section>
+</section></section>
 <section>
 <section id="when-to-use-containerization" class="title-slide slide level2 center">
 <h2>When to Use Containerization?</h2>
 <p>Containerization is essential for modern application development, offering agility, scalability, and efficiency. It is particularly well-suited for cloud environments, microservices, and DevOps workflows.</p>
 </section>
-<section id="cloud-native-applications-1" class="title-slide slide level3 center">
+<section id="cloud-native-applications-1" class="slide level3">
 <h3>Cloud-Native Applications</h3>
 <ul>
 <li>Ideal for dynamic cloud-based environments.</li>
@@ -516,8 +499,7 @@
 <li>Simplifies deployment and scaling to adapt to business needs.</li>
 </ul>
 </section>
-
-<section id="microservices-architecture" class="title-slide slide level3 center">
+<section id="microservices-architecture" class="slide level3">
 <h3>Microservices Architecture</h3>
 <ul>
 <li>Supports small, independent, and self-contained services.</li>
@@ -525,8 +507,7 @@
 <li>Enables rapid updates and scaling without affecting the entire application.</li>
 </ul>
 </section>
-
-<section id="fast-deployment-efficient-resource-utilization" class="title-slide slide level3 center">
+<section id="fast-deployment-efficient-resource-utilization" class="slide level3">
 <h3>Fast Deployment &amp; Efficient Resource Utilization</h3>
 <ul>
 <li>Containers launch within seconds for quick responses to changes.</li>
@@ -534,22 +515,20 @@
 <li>Lightweight and efficient, reducing resource overhead.</li>
 </ul>
 </section>
-
-<section id="seamless-cicd-devops-integration" class="title-slide slide level3 center">
+<section id="seamless-cicd-devops-integration" class="slide level3">
 <h3>Seamless CI/CD &amp; DevOps Integration</h3>
 <ul>
 <li>Enhances workflow automation for continuous integration and deployment.</li>
 <li>Ensures consistency across development, testing, and production environments.</li>
 <li>Accelerates software releases and improves quality.</li>
 </ul>
-</section>
-</section>
+</section></section>
 <section>
 <section id="scenarios-for-iaas-infrastructure-as-a-service" class="title-slide slide level2 center">
 <h2>Scenarios for IaaS (Infrastructure as a Service)</h2>
 <p>IaaS provides scalable and flexible cloud-based infrastructure, eliminating the need for physical hardware. Virtualization plays a key role in optimizing resource allocation and management.</p>
 </section>
-<section id="hosting-multiple-os-environments" class="title-slide slide level3 center">
+<section id="hosting-multiple-os-environments" class="slide level3">
 <h3>Hosting Multiple OS Environments</h3>
 <ul>
 <li>Enables organizations to run various OS instances in the cloud.</li>
@@ -557,8 +536,7 @@
 <li>Allows quick provisioning of VMs for development and testing.</li>
 </ul>
 </section>
-
-<section id="legacy-system-migration" class="title-slide slide level3 center">
+<section id="legacy-system-migration" class="slide level3">
 <h3>Legacy System Migration</h3>
 <ul>
 <li>Supports lift-and-shift migration of legacy applications to the cloud.</li>
@@ -566,8 +544,7 @@
 <li>Provides scalability, cost efficiency, and lower maintenance overhead.</li>
 </ul>
 </section>
-
-<section id="custom-infrastructure-setups" class="title-slide slide level3 center">
+<section id="custom-infrastructure-setups" class="slide level3">
 <h3>Custom Infrastructure Setups</h3>
 <ul>
 <li>Allows tailored infrastructure configurations to meet specific needs.</li>
@@ -575,8 +552,7 @@
 <li>Helps organizations optimize performance, security, and cost.</li>
 </ul>
 </section>
-
-<section id="disaster-recovery-business-continuity" class="title-slide slide level3 center">
+<section id="disaster-recovery-business-continuity" class="slide level3">
 <h3>Disaster Recovery &amp; Business Continuity</h3>
 <ul>
 <li>Enables rapid recovery of critical applications and data.</li>
@@ -584,22 +560,20 @@
 <li>Ensures continuous operations with cloud-based redundancy.</li>
 </ul>
 </section>
-
-<section id="seasonal-scalability" class="title-slide slide level3 center">
+<section id="seasonal-scalability" class="slide level3">
 <h3>Seasonal Scalability</h3>
 <ul>
 <li>Supports dynamic scaling based on fluctuating demand.</li>
 <li>Ideal for businesses with seasonal traffic spikes, like e-commerce.</li>
 <li>Reduces costs by scaling down resources during off-peak periods.</li>
 </ul>
-</section>
-</section>
+</section></section>
 <section>
 <section id="scenarios-for-paas-platform-as-a-service" class="title-slide slide level2 center">
 <h2>Scenarios for PaaS (Platform as a Service)</h2>
 <p>PaaS provides an application development framework that abstracts infrastructure complexity, enabling developers to build, test, and deploy applications efficiently. Containerization further enhances PaaS by streamlining development and deployment.</p>
 </section>
-<section id="building-deploying-cloud-native-apps" class="title-slide slide level3 center">
+<section id="building-deploying-cloud-native-apps" class="slide level3">
 <h3>Building &amp; Deploying Cloud-Native Apps</h3>
 <ul>
 <li>Platforms like Google Cloud and AWS Lambda leverage containerization.</li>
@@ -607,8 +581,7 @@
 <li>Ensures consistency in development, testing, and production.</li>
 </ul>
 </section>
-
-<section id="microservices-development" class="title-slide slide level3 center">
+<section id="microservices-development" class="slide level3">
 <h3>Microservices Development</h3>
 <ul>
 <li>Supports breaking applications into small, independently deployable services.</li>
@@ -616,8 +589,7 @@
 <li>Enables concurrent development, faster release cycles, and improved responsiveness.</li>
 </ul>
 </section>
-
-<section id="cicd-automation" class="title-slide slide level3 center">
+<section id="cicd-automation" class="slide level3">
 <h3>CI/CD Automation</h3>
 <ul>
 <li>Integrates containerization to automate testing and deployment.</li>
@@ -625,31 +597,27 @@
 <li>Enhances collaboration between development and operations teams.</li>
 </ul>
 </section>
-
-<section id="rapid-prototyping" class="title-slide slide level3 center">
+<section id="rapid-prototyping" class="slide level3">
 <h3>Rapid Prototyping</h3>
 <ul>
 <li>Offers pre-configured tools and services for databases, caching, and messaging.</li>
 <li>Allows developers to focus on coding without managing infrastructure.</li>
 <li>Speeds up innovation and market deployment of new ideas.</li>
 </ul>
-</section>
-</section>
+</section></section>
 <section>
 <section id="some-common-questions" class="title-slide slide level2 center">
 <h2>Some Common Questions</h2>
 
 </section>
-<section id="can-hypervisors-and-containerization-be-used-together" class="title-slide slide level3 center">
+<section id="can-hypervisors-and-containerization-be-used-together" class="slide level3">
 <h3>Can hypervisors and containerization be used together?</h3>
 <p>Hypervisors and containerization can work together to maximize their strengths. Many organizations use a hybrid approach, running VMs on hypervisors while hosting containerized applications inside them. This combines the strong isolation of VMs with the efficiency of containers. For example, a Type 1 hypervisor can manage multiple VMs, each running containerized applications, ensuring security, flexibility, and optimized resource use.</p>
 </section>
-
-<section id="how-do-container-orchestration-tools-relate-to-containerization" class="title-slide slide level3 center">
+<section id="how-do-container-orchestration-tools-relate-to-containerization" class="slide level3">
 <h3>How do container orchestration tools relate to containerization?</h3>
 <p>Container orchestration tools, like Kubernetes and Docker Swarm, automate the deployment, scaling, and management of containers. They help organizations efficiently run large numbers of containers across multiple hosts, ensuring load balancing, service discovery, and automated scaling. While containerization provides isolation, orchestration tools simplify managing and operating containers in production.n.</p>
-</section>
-</section>
+</section></section>
 <section id="choosing-the-right-approach" class="title-slide slide level2 center">
 <h2>Choosing the Right Approach</h2>
 <div class="smaller-70">
@@ -698,7 +666,7 @@
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>Software Engineering (EECE3093C / CS3093C)</p>
+
 </div>
 </div></div>
 

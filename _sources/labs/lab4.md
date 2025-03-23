@@ -123,7 +123,7 @@ Accept the the following GitHub Classroom assignment invitation, this will creat
 
 [https://classroom.github.com/a/w13UuPS-](https://classroom.github.com/a/w13UuPS-)
 
-### Task 2: Create Repository Issues
+### Task 2: Create GitHub Repository Issues
 
 Create two GitHub issues in your repository to represent the tasks you will be completing in this lab. The titles for the tasks are:
 
@@ -145,7 +145,7 @@ An issue should look like this:
 
 #### Issue Template
 
-When creating your GitHub issues, use the following markdown template for your issue description, just copy and paste into your issue description. Be sure to remove the opening and closing backticks (```).
+When creating your GitHub issues, use the following markdown template for your issue description, just copy and paste into your issue description.
 
 ```
 ## Description
@@ -171,7 +171,7 @@ Create a UML class diagram that accurately represents the Animal class hierarchy
 - [ ] Diagram is committed to the repository
 ```
 
-### Task 4: Visual UML Class Diagram with draw.io
+### Task 3: Visual UML Class Diagram with draw.io
 
 1. Move this issue to "In Progress" in your Kanban board
 2. Create a complete UML class diagram using draw.io that represents all four classes in the code
@@ -179,7 +179,7 @@ Create a UML class diagram that accurately represents the Animal class hierarchy
 4. Commit this file to your repository with the message "Completed UML class diagram in draw.io - fixes #X" (where X is your issue number)
 5. Move the issue to "Done" in your Kanban board
 
-### Task 5: Code-based UML Class Diagram with Mermaid
+### Task 4: Code-based UML Class Diagram with Mermaid
 
 1. Move this issue to "In Progress" in your Kanban board
 2. Create a markdown file in your repository named `UML-class-diagram.md`
@@ -188,7 +188,23 @@ Create a UML class diagram that accurately represents the Animal class hierarchy
 5. Move the issue to "Done" in your Kanban board
 
 
-## Mermaid
+## Additional Information
+
+### Linking Issues to Commits
+
+When you commit your changes, you should include the issue number in the commit message. This will help you track which commits are related to which issues. For example, if you are working on issue #1, you can include "#1" in your commit message. This will create a link between the commit and the issue, making it easier to track progress and see which issues have been resolved.
+
+There are special keywords that you can use in your commit messages to automatically close issues when the commit is pushed to the main branch. For example, if you want to close issue #1 when you push your commit, you can include the keyword "fixes" followed by the issue number in your commit message. For example, you can write:
+
+```
+git commit -m "Completed UML class diagram in draw.io - fixes #1"
+```
+
+This will automatically close issue #1 when the commit is pushed to the main branch.
+
+See [GitHub documentation](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/using-keywords-in-issues-and-pull-requests) for more information on closing issues with commit messages.
+
+### Mermaid
 
 [Mermaid](https://mermaid.js.org) is a JavaScript-based diagramming and charting tool that uses Markdown-inspired syntax. It allows you to create diagrams and visualizations directly in your markdown files. 
 

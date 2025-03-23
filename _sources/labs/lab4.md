@@ -150,29 +150,29 @@ When creating your GitHub issues, use the following markdown template for your i
 ```{admonition} Issue Template (click here!)
 :class: tip, dropdown
 
-\#\# Description
+    ```
+    ## Description
+    Create a UML class diagram that accurately represents the Animal class hierarchy using [draw.io OR Mermaid].
 
-Create a UML class diagram that accurately represents the Animal class hierarchy using [draw.io OR Mermaid].
+    ## Requirements
+    - Represent all four classes: Animal, Dog, Cat, and Bird
+    - Show all attributes with proper visibility notation
+    - Show all methods with proper visibility notation
+    - Include return types and parameters for methods
+    - Properly indicate the abstract class and abstract method
+    - Show all inheritance relationships
+    - Follow standard UML notation
 
-\#\# Requirements
+    ## Acceptance Criteria
 
-\- Represent all four classes: Animal, Dog, Cat, and Bird
-\- Show all attributes with proper visibility notation
-\- Show all methods with proper visibility notation
-\- Include return types and parameters for methods
-\- Properly indicate the abstract class and abstract method
-\- Show all inheritance relationships
-\- Follow standard UML notation
-
-\#\# Acceptance Criteria
-
-\- [ ] All classes are correctly represented
-\- [ ] All attributes are shown with proper visibility
-\- [ ] All methods are shown with proper visibility
-\- [ ] Abstract class and method are properly indicated
-\- [ ] Inheritance relationships are correctly shown
-\- [ ] Diagram is saved as an image file.
-\- [ ] Diagram is committed to the repository
+    - [ ] All classes are correctly represented
+    - [ ] All attributes are shown with proper visibility
+    - [ ] All methods are shown with proper visibility
+    - [ ] Abstract class and method are properly indicated
+    - [ ] Inheritance relationships are correctly shown
+    - [ ] Diagram is saved as an image file.
+    - [ ] Diagram is committed to the repository
+    ```
 
 ```
 

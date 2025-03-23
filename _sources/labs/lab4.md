@@ -149,6 +149,7 @@ When creating your GitHub issues, use the following markdown template for your i
 
 ```{admonition} Issue Template (click here!)
 :class: tip, dropdown
+```markdown
 ## Description
 Create a UML class diagram that accurately represents the Animal class hierarchy using [draw.io OR Mermaid].
 
@@ -169,6 +170,7 @@ Create a UML class diagram that accurately represents the Animal class hierarchy
 - [ ] Inheritance relationships are correctly shown
 - [ ] Diagram is saved as an image file.
 - [ ] Diagram is committed to the repository
+```
 ```
 
 

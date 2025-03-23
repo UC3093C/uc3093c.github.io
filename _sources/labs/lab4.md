@@ -3,14 +3,6 @@
 
 In this lab, you will gain hands-on experience creating UML class diagrams from existing Java code using graphical diagramming tools such as **draw.io**, as well as generating diagrams programmatically with **Mermaid** syntax. This lab assignment will strengthen your ability to visually communicate object-oriented designs, and enhance your project management skills by utilizing GitHub issues, including creating, organizing, and writing clear, actionable issues to manage development tasks efficiently.
 
-## Learning Objectives
-
-- Translate code into standardized UML class diagrams
-- Identify and represent inheritance relationships
-- Correctly depict abstract classes, methods, and fields
-- Understand visibility modifiers and their UML representation
-- Use both visual UML tools (draw.io) and code-based UML (Mermaid)
-- Practice using GitHub Classroom, Projects, and Issues
 
 ## The Code
 
@@ -125,7 +117,9 @@ Accept the the following GitHub Classroom assignment invitation, this will creat
 
 ### Task 2: Create GitHub Repository Issues
 
-Create two GitHub issues in your repository to represent the tasks you will be completing in this lab. The titles for the tasks are:
+Create two GitHub issues in your repository to represent the tasks you will be completing in this lab.  See the [Creating an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue) documentation for more information on how to create issues in GitHub.
+
+The titles for the issues are:
 
 1) "Create UML class diagram using draw.io"
 2) "Create UML class diagram using Mermaid"
@@ -167,8 +161,7 @@ Create a UML class diagram that accurately represents the Animal class hierarchy
 - [ ] All methods are shown with proper visibility
 - [ ] Abstract class and method are properly indicated
 - [ ] Inheritance relationships are correctly shown
-- [ ] Diagram is saved as an image file.
-- [ ] Diagram is committed to the repository
+- [ ] Diagram is committed to the repository as [image file or markdown file]
 ```
 
 ### Task 3: Visual UML Class Diagram with draw.io
@@ -251,10 +244,9 @@ GitHub supports rendering Mermaid diagrams directly in markdown files, so you ca
 
 ### Grading Rubric
 
-- Correct representation of classes and relationships in class diagram, proper use of UML notation for visibility, abstract classes, and methods (50%)
-  - Correct implementation using draw.io diagram (25%)
-  - Correct implementation using Mermaid diagram (25%)
-- Proper use of GitHub Classroom, Projects, and Issues with correct issue template (50%)
-  - Correctly created and managed GitHub Project (20%)
+- Correct representation of classes and relationships in class diagram, proper use of UML notation for visibility, abstract classes, and methods (60%)
+  - Correct implementation using draw.io diagram (30%)
+  - Correct implementation using Mermaid diagram (30%)
+- Proper use of GitHub and Issues with correct issue template (40%)
   - Correctly created and managed GitHub Issues (20%)
-  - Proper commit messages and issue linking (10%)
+  - Proper commit messages and issue linking (20%)

@@ -150,6 +150,8 @@ When creating your GitHub issues, use the following markdown template for your i
 ```{admonition} Issue Template (click here!)
 :class: tip, dropdown
 
+Copy and paste the following template into your issue description. Be sure to remove the opening and closing backticks (```).
+
     ```
     ## Description
     Create a UML class diagram that accurately represents the Animal class hierarchy using [draw.io OR Mermaid].

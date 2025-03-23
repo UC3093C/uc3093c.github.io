@@ -151,9 +151,11 @@ When creating your GitHub issues, use the following markdown template for your i
 :class: tip, dropdown
 
 \#\# Description
+
 Create a UML class diagram that accurately represents the Animal class hierarchy using [draw.io OR Mermaid].
 
 \#\# Requirements
+
 \- Represent all four classes: Animal, Dog, Cat, and Bird
 \- Show all attributes with proper visibility notation
 \- Show all methods with proper visibility notation
@@ -163,6 +165,7 @@ Create a UML class diagram that accurately represents the Animal class hierarchy
 \- Follow standard UML notation
 
 \#\# Acceptance Criteria
+
 \- [ ] All classes are correctly represented
 \- [ ] All attributes are shown with proper visibility
 \- [ ] All methods are shown with proper visibility

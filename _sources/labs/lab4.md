@@ -1,6 +1,7 @@
-# Lab Assignment: UML Class Diagram from Code
+# Lab 4: UML, GitHub Issues
 
-In this lab, you will gain hands-on experience creating UML class diagrams from existing Java code using graphical diagramming tools such as **draw.io**, as well as generating diagrams programmatically with **Mermaid** syntax. This lab assignment will strengthen your ability to visually communicate object-oriented designs, and enhance your project management skills by utilizing GitHub Projects, including creating, organizing, and writing clear, actionable issues to manage development tasks efficiently.
+
+In this lab, you will gain hands-on experience creating UML class diagrams from existing Java code using graphical diagramming tools such as **draw.io**, as well as generating diagrams programmatically with **Mermaid** syntax. This lab assignment will strengthen your ability to visually communicate object-oriented designs, and enhance your project management skills by utilizing GitHub issues, including creating, organizing, and writing clear, actionable issues to manage development tasks efficiently.
 
 ## Learning Objectives
 
@@ -118,33 +119,36 @@ public class Bird extends Animal {
 
 ### Task 1: Accept GitHub Classroom Assignment
 
-Accept the GitHub Classroom assignment invitation linked here, this will create a personal repository in the UC3093C organization.  You will be using this repository to manage your project and submit your work.
+Accept the the following GitHub Classroom assignment invitation, this will create a personal repository in the UC3093C organization.  You will be using this repository to manage your project and submit your work.
 
+[https://classroom.github.com/a/w13UuPS-](https://classroom.github.com/a/w13UuPS-)
 
-### Task 2: Create a GitHub Project
-Create a GitHub Project linked to your repository.  Set up the project as a Kanban board with columns: To Do, In Progress, Done.  
+### Task 3: Create Issues
 
-### Task 3: Create Tasks
-
-Create two tasks in the To Do column:
+Create two GitHub issues in your repository to represent the tasks you will be completing in this lab. The titles for the tasks are:
 
 1) "Create UML class diagram using draw.io"
 2) "Create UML class diagram using Mermaid"
 
-You must:
+When creating the issue you must:
 
-- Convert both tasks to GitHub Issues.
-- Use the provided issue template (see below) for the .
-- Set the issue type to "documentation".
+- Use the issue template (in markdown syntax) provided below.  Make sure to make minior adjustments to the template to fit your specific task.  
 - Assign the issues to yourself.
-- Add appropriate labels (e.g., "documentation", "UML").
+- Add "documentation" as a label.
+- Add "UML" as a label, but you will need to create this label first. Use "UML" as the name and "UML diagrams" for the description.
+- Specify "Task" as the issue type.
+
+![](/images/github_issue.png)
 
 
 **Issue Template**
 
-When creating your GitHub issues, use the following template for your issue description:
+Use the issue template provided below to create the issue description.
 
-```
+When creating your GitHub issues, use the following markdown template for your issue description:
+
+```{admonition} Issue Template (click here!)
+:class: tip, dropdown
 ## Description
 Create a UML class diagram that accurately represents the Animal class hierarchy using [draw.io OR Mermaid].
 
@@ -163,9 +167,11 @@ Create a UML class diagram that accurately represents the Animal class hierarchy
 - [ ] All methods are shown with proper visibility
 - [ ] Abstract class and method are properly indicated
 - [ ] Inheritance relationships are correctly shown
-- [ ] Diagram is [saved as an image file OR included in markdown]
+- [ ] Diagram is saved as an image file.
 - [ ] Diagram is committed to the repository
 ```
+
+
 
 ### Task 4: Visual UML Class Diagram with draw.io
 

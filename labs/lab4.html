@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Lab Assignment: UML Class Diagram from Code &#8212; Software Engineering (EECE3093C / CS3093C)</title>
+    <title>Lab 4: UML, GitHub Issues &#8212; Software Engineering (EECE3093C / CS3093C)</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=3afe5843" />
@@ -218,7 +218,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lab1.html">Lab 1: Version Control Systems</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lab2.html">Lab 2: Automation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lab3.html">Lab 3: Emphasizing Software Quality</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lab Assignment: UML Class Diagram from Code</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Lab 4: UML, GitHub Issues</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Project</span></p>
 <ul class="nav bd-sidenav">
@@ -380,7 +380,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Lab Assignment: UML Class Diagram from Code</h1>
+    <h1>Lab 4: UML, GitHub Issues</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -400,8 +400,7 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-accept-github-classroom-assignment">Task 1: Accept GitHub Classroom Assignment</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-create-a-github-project">Task 2: Create a GitHub Project</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-create-tasks">Task 3: Create Tasks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-create-issues">Task 3: Create Issues</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visual-uml-class-diagram-with-draw-io">Task 4: Visual UML Class Diagram with draw.io</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-code-based-uml-class-diagram-with-mermaid">Task 5: Code-based UML Class Diagram with Mermaid</a></li>
 </ul>
@@ -424,9 +423,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="lab-assignment-uml-class-diagram-from-code">
-<h1>Lab Assignment: UML Class Diagram from Code<a class="headerlink" href="#lab-assignment-uml-class-diagram-from-code" title="Link to this heading">#</a></h1>
-<p>In this lab, you will gain hands-on experience creating UML class diagrams from existing Java code using graphical diagramming tools such as <strong><a class="reference external" href="http://draw.io">draw.io</a></strong>, as well as generating diagrams programmatically with <strong>Mermaid</strong> syntax. This lab assignment will strengthen your ability to visually communicate object-oriented designs, and enhance your project management skills by utilizing GitHub Projects, including creating, organizing, and writing clear, actionable issues to manage development tasks efficiently.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="lab-4-uml-github-issues">
+<h1>Lab 4: UML, GitHub Issues<a class="headerlink" href="#lab-4-uml-github-issues" title="Link to this heading">#</a></h1>
+<p>In this lab, you will gain hands-on experience creating UML class diagrams from existing Java code using graphical diagramming tools such as <strong><a class="reference external" href="http://draw.io">draw.io</a></strong>, as well as generating diagrams programmatically with <strong>Mermaid</strong> syntax. This lab assignment will strengthen your ability to visually communicate object-oriented designs, and enhance your project management skills by utilizing GitHub issues, including creating, organizing, and writing clear, actionable issues to manage development tasks efficiently.</p>
 <section id="learning-objectives">
 <h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
 <ul class="simple">
@@ -548,50 +547,52 @@ document.write(`
 <h2>Tasks<a class="headerlink" href="#tasks" title="Link to this heading">#</a></h2>
 <section id="task-1-accept-github-classroom-assignment">
 <h3>Task 1: Accept GitHub Classroom Assignment<a class="headerlink" href="#task-1-accept-github-classroom-assignment" title="Link to this heading">#</a></h3>
-<p>Accept the GitHub Classroom assignment invitation linked here, this will create a personal repository in the UC3093C organization.  You will be using this repository to manage your project and submit your work.</p>
+<p>Accept the the following GitHub Classroom assignment invitation, this will create a personal repository in the UC3093C organization.  You will be using this repository to manage your project and submit your work.</p>
+<p><a class="reference external" href="https://classroom.github.com/a/w13UuPS-">https://classroom.github.com/a/w13UuPS-</a></p>
 </section>
-<section id="task-2-create-a-github-project">
-<h3>Task 2: Create a GitHub Project<a class="headerlink" href="#task-2-create-a-github-project" title="Link to this heading">#</a></h3>
-<p>Create a GitHub Project linked to your repository.  Set up the project as a Kanban board with columns: To Do, In Progress, Done.</p>
-</section>
-<section id="task-3-create-tasks">
-<h3>Task 3: Create Tasks<a class="headerlink" href="#task-3-create-tasks" title="Link to this heading">#</a></h3>
-<p>Create two tasks in the To Do column:</p>
+<section id="task-3-create-issues">
+<h3>Task 3: Create Issues<a class="headerlink" href="#task-3-create-issues" title="Link to this heading">#</a></h3>
+<p>Create two GitHub issues in your repository to represent the tasks you will be completing in this lab. The titles for the tasks are:</p>
 <ol class="arabic simple">
 <li><p>“Create UML class diagram using <a class="reference external" href="http://draw.io">draw.io</a>”</p></li>
 <li><p>“Create UML class diagram using Mermaid”</p></li>
 </ol>
-<p>You must:</p>
+<p>When creating the issue you must:</p>
 <ul class="simple">
-<li><p>Convert both tasks to GitHub Issues.</p></li>
-<li><p>Use the provided issue template (see below) for the .</p></li>
-<li><p>Set the issue type to “documentation”.</p></li>
+<li><p>Use the issue template (in markdown syntax) provided below.  Make sure to make minior adjustments to the template to fit your specific task.</p></li>
 <li><p>Assign the issues to yourself.</p></li>
-<li><p>Add appropriate labels (e.g., “documentation”, “UML”).</p></li>
+<li><p>Add “documentation” as a label.</p></li>
+<li><p>Add “UML” as a label, but you will need to create this label first. Use “UML” as the name and “UML diagrams” for the description.</p></li>
+<li><p>Specify “Task” as the issue type.</p></li>
 </ul>
+<p><img alt="" src="../_images/github_issue.png" /></p>
 <p><strong>Issue Template</strong></p>
-<p>When creating your GitHub issues, use the following template for your issue description:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## Description</span>
-<span class="n">Create</span> <span class="n">a</span> <span class="n">UML</span> <span class="k">class</span><span class="w"> </span><span class="nc">diagram</span> <span class="n">that</span> <span class="n">accurately</span> <span class="n">represents</span> <span class="n">the</span> <span class="n">Animal</span> <span class="k">class</span><span class="w"> </span><span class="nc">hierarchy</span> <span class="n">using</span> <span class="p">[</span><span class="n">draw</span><span class="o">.</span><span class="n">io</span> <span class="n">OR</span> <span class="n">Mermaid</span><span class="p">]</span><span class="o">.</span>
-
-<span class="c1">## Requirements</span>
-<span class="o">-</span> <span class="n">Represent</span> <span class="nb">all</span> <span class="n">four</span> <span class="n">classes</span><span class="p">:</span> <span class="n">Animal</span><span class="p">,</span> <span class="n">Dog</span><span class="p">,</span> <span class="n">Cat</span><span class="p">,</span> <span class="ow">and</span> <span class="n">Bird</span>
-<span class="o">-</span> <span class="n">Show</span> <span class="nb">all</span> <span class="n">attributes</span> <span class="k">with</span> <span class="n">proper</span> <span class="n">visibility</span> <span class="n">notation</span>
-<span class="o">-</span> <span class="n">Show</span> <span class="nb">all</span> <span class="n">methods</span> <span class="k">with</span> <span class="n">proper</span> <span class="n">visibility</span> <span class="n">notation</span>
-<span class="o">-</span> <span class="n">Include</span> <span class="k">return</span> <span class="n">types</span> <span class="ow">and</span> <span class="n">parameters</span> <span class="k">for</span> <span class="n">methods</span>
-<span class="o">-</span> <span class="n">Properly</span> <span class="n">indicate</span> <span class="n">the</span> <span class="n">abstract</span> <span class="k">class</span><span class="w"> </span><span class="nc">and</span> <span class="n">abstract</span> <span class="n">method</span>
-<span class="o">-</span> <span class="n">Show</span> <span class="nb">all</span> <span class="n">inheritance</span> <span class="n">relationships</span>
-<span class="o">-</span> <span class="n">Follow</span> <span class="n">standard</span> <span class="n">UML</span> <span class="n">notation</span>
-
-<span class="c1">## Acceptance Criteria</span>
-<span class="o">-</span> <span class="p">[</span> <span class="p">]</span> <span class="n">All</span> <span class="n">classes</span> <span class="n">are</span> <span class="n">correctly</span> <span class="n">represented</span>
-<span class="o">-</span> <span class="p">[</span> <span class="p">]</span> <span class="n">All</span> <span class="n">attributes</span> <span class="n">are</span> <span class="n">shown</span> <span class="k">with</span> <span class="n">proper</span> <span class="n">visibility</span>
-<span class="o">-</span> <span class="p">[</span> <span class="p">]</span> <span class="n">All</span> <span class="n">methods</span> <span class="n">are</span> <span class="n">shown</span> <span class="k">with</span> <span class="n">proper</span> <span class="n">visibility</span>
-<span class="o">-</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Abstract</span> <span class="k">class</span><span class="w"> </span><span class="nc">and</span> <span class="n">method</span> <span class="n">are</span> <span class="n">properly</span> <span class="n">indicated</span>
-<span class="o">-</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Inheritance</span> <span class="n">relationships</span> <span class="n">are</span> <span class="n">correctly</span> <span class="n">shown</span>
-<span class="o">-</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Diagram</span> <span class="ow">is</span> <span class="p">[</span><span class="n">saved</span> <span class="k">as</span> <span class="n">an</span> <span class="n">image</span> <span class="n">file</span> <span class="n">OR</span> <span class="n">included</span> <span class="ow">in</span> <span class="n">markdown</span><span class="p">]</span>
-<span class="o">-</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Diagram</span> <span class="ow">is</span> <span class="n">committed</span> <span class="n">to</span> <span class="n">the</span> <span class="n">repository</span>
-</pre></div>
+<p>Use the issue template provided below to create the issue description.</p>
+<p>When creating your GitHub issues, use the following markdown template for your issue description:</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Issue Template (click here!)</p>
+<h2 class="rubric" id="description">Description</h2>
+<p>Create a UML class diagram that accurately represents the Animal class hierarchy using [<a class="reference external" href="http://draw.io">draw.io</a> OR Mermaid].</p>
+<h2 class="rubric" id="requirements">Requirements</h2>
+<ul class="simple">
+<li><p>Represent all four classes: Animal, Dog, Cat, and Bird</p></li>
+<li><p>Show all attributes with proper visibility notation</p></li>
+<li><p>Show all methods with proper visibility notation</p></li>
+<li><p>Include return types and parameters for methods</p></li>
+<li><p>Properly indicate the abstract class and abstract method</p></li>
+<li><p>Show all inheritance relationships</p></li>
+<li><p>Follow standard UML notation</p></li>
+</ul>
+<h2 class="rubric" id="acceptance-criteria">Acceptance Criteria</h2>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> All classes are correctly represented</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> All attributes are shown with proper visibility</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> All methods are shown with proper visibility</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Abstract class and method are properly indicated</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Inheritance relationships are correctly shown</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Diagram is saved as an image file.</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> Diagram is committed to the repository</p></li>
+</ul>
 </div>
 </section>
 <section id="task-4-visual-uml-class-diagram-with-draw-io">
@@ -767,8 +768,7 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-accept-github-classroom-assignment">Task 1: Accept GitHub Classroom Assignment</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-2-create-a-github-project">Task 2: Create a GitHub Project</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-create-tasks">Task 3: Create Tasks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-create-issues">Task 3: Create Issues</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visual-uml-class-diagram-with-draw-io">Task 4: Visual UML Class Diagram with draw.io</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-code-based-uml-class-diagram-with-mermaid">Task 5: Code-based UML Class Diagram with Mermaid</a></li>
 </ul>

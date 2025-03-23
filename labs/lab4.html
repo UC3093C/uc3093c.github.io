@@ -401,6 +401,15 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-accept-github-classroom-assignment">Task 1: Accept GitHub Classroom Assignment</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-create-issues">Task 3: Create Issues</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visual-uml-class-diagram-with-draw-io">Task 4: Visual UML Class Diagram with draw.io</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-code-based-uml-class-diagram-with-mermaid">Task 5: Code-based UML Class Diagram with Mermaid</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mermaid">Mermaid</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading">Grading</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables">Deliverables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#following-proper-uml-notation-guidelines">Following proper UML notation guidelines</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-rubric">Grading Rubric</a></li>
 </ul>
 </li>
 </ul>
@@ -562,105 +571,127 @@ document.write(`
 <p>When creating your GitHub issues, use the following markdown template for your issue description:</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Issue Template (click here!)</p>
-<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Description</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>```markdown
+## Description
 Create a UML class diagram that accurately represents the Animal class hierarchy using [draw.io OR Mermaid].
 
-<span class="gu">## Requirements</span>
-<span class="k">-</span><span class="w"> </span>Represent all four classes: Animal, Dog, Cat, and Bird
-<span class="k">-</span><span class="w"> </span>Show all attributes with proper visibility notation
-<span class="k">-</span><span class="w"> </span>Show all methods with proper visibility notation
-<span class="k">-</span><span class="w"> </span>Include return types and parameters for methods
-<span class="k">-</span><span class="w"> </span>Properly indicate the abstract class and abstract method
-<span class="k">-</span><span class="w"> </span>Show all inheritance relationships
-<span class="k">-</span><span class="w"> </span>Follow standard UML notation
+## Requirements
+- Represent all four classes: Animal, Dog, Cat, and Bird
+- Show all attributes with proper visibility notation
+- Show all methods with proper visibility notation
+- Include return types and parameters for methods
+- Properly indicate the abstract class and abstract method
+- Show all inheritance relationships
+- Follow standard UML notation
 
-<span class="gu">## Acceptance Criteria</span>
-<span class="k">- [ ]</span> All classes are correctly represented
-<span class="k">- [ ]</span> All attributes are shown with proper visibility
-<span class="k">- [ ]</span> All methods are shown with proper visibility
-<span class="k">- [ ]</span> Abstract class and method are properly indicated
-<span class="k">- [ ]</span> Inheritance relationships are correctly shown
-<span class="k">- [ ]</span> Diagram is saved as an image file.
-<span class="k">- [ ]</span> Diagram is committed to the repository
+## Acceptance Criteria
+- [ ] All classes are correctly represented
+- [ ] All attributes are shown with proper visibility
+- [ ] All methods are shown with proper visibility
+- [ ] Abstract class and method are properly indicated
+- [ ] Inheritance relationships are correctly shown
+- [ ] Diagram is saved as an image file.
+- [ ] Diagram is committed to the repository
+```
 </pre></div>
 </div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-
-
-### Task 4: Visual UML Class Diagram with draw.io
-
-1. Move this issue to &quot;In Progress&quot; in your Kanban board
-2. Create a complete UML class diagram using draw.io that represents all four classes in the code
-3. Export the diagram as a PNG or JPEG file
-4. Commit this file to your repository with the message &quot;Completed UML class diagram in draw.io - fixes #X&quot; (where X is your issue number)
-5. Move the issue to &quot;Done&quot; in your Kanban board
-
-### Task 5: Code-based UML Class Diagram with Mermaid
-
-1. Move this issue to &quot;In Progress&quot; in your Kanban board
-2. Create a markdown file in your repository named `UML-class-diagram.md`
-3. Use Mermaid syntax to create the class diagram in this file
-4. Commit the file with the message &quot;Completed UML class diagram in Mermaid - fixes #Y&quot; (where Y is your issue number)
-5. Move the issue to &quot;Done&quot; in your Kanban board
-
-
-## Mermaid
-
-[Mermaid](https://mermaid.js.org) is a JavaScript-based diagramming and charting tool that uses Markdown-inspired syntax. It allows you to create diagrams and visualizations directly in your markdown files. 
-
-Mermaid supports various types of diagrams, including flowcharts, sequence diagrams, and class diagrams. In this lab, you will use Mermaid to create a class diagram that represents the same classes and relationships as in the draw.io diagram.  Please see the [Mermaid class diagram documentation](https://mermaid.js.org/syntax/classDiagram.html) for more details on syntax and features.
-
-GitHub supports rendering Mermaid diagrams directly in markdown files, so you can include your class diagram in the `UML-class-diagram.md` file you create.
-
-## Grading
-
-### Deliverables
-
-1. A GitHub repository containing:
-   - PNG/JPEG file of your draw.io UML class diagram
-   - A markdown file named `UML-diagram.md` with Mermaid code for the class diagram
-
-2. A completed GitHub Project board showing your workflow progression (both tasks should be in the &quot;Done&quot; column)
-
-3. GitHub Issues that are properly closed by your commits
-
-
-### Following proper UML notation guidelines
-
-1. **Class Representation**:
-   - Regular classes: Rectangle with solid lines
-   - Abstract classes: Rectangle with solid lines, class name in *italics*
-
-2. **Visibility Modifiers**:
-   - Public: +
-   - Private: -
-   - Protected: #
-   - Package: ~ (no modifier)
-
-3. **Methods**:
-   - Format: visibility name(parameters): returnType
-   - Abstract methods should be in *italics*
-
-4. **Attributes**:
-   - Format: visibility name: type
-
-5. **Inheritance**:
-   - Shown with an arrow pointing from the subclass to the superclass
-   - Use a solid line with a hollow triangular arrowhead
-
-
-### Grading Rubric
-
-- Correct representation of classes and relationships in class diagram, proper use of UML notation for visibility, abstract classes, and methods (50%)
-  - Correct implementation using draw.io diagram (25%)
-  - Correct implementation using Mermaid diagram (25%)
-- Proper use of GitHub Classroom, Projects, and Issues with correct issue template (50%)
-  - Correctly created and managed GitHub Project (20%)
-  - Correctly created and managed GitHub Issues (20%)
-  - Proper commit messages and issue linking (10%)
-</pre></div>
-</div>
+</section>
+<section id="task-4-visual-uml-class-diagram-with-draw-io">
+<h3>Task 4: Visual UML Class Diagram with <a class="reference external" href="http://draw.io">draw.io</a><a class="headerlink" href="#task-4-visual-uml-class-diagram-with-draw-io" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Move this issue to “In Progress” in your Kanban board</p></li>
+<li><p>Create a complete UML class diagram using <a class="reference external" href="http://draw.io">draw.io</a> that represents all four classes in the code</p></li>
+<li><p>Export the diagram as a PNG or JPEG file</p></li>
+<li><p>Commit this file to your repository with the message “Completed UML class diagram in <a class="reference external" href="http://draw.io">draw.io</a> - fixes #X” (where X is your issue number)</p></li>
+<li><p>Move the issue to “Done” in your Kanban board</p></li>
+</ol>
+</section>
+<section id="task-5-code-based-uml-class-diagram-with-mermaid">
+<h3>Task 5: Code-based UML Class Diagram with Mermaid<a class="headerlink" href="#task-5-code-based-uml-class-diagram-with-mermaid" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Move this issue to “In Progress” in your Kanban board</p></li>
+<li><p>Create a markdown file in your repository named <code class="docutils literal notranslate"><span class="pre">UML-class-diagram.md</span></code></p></li>
+<li><p>Use Mermaid syntax to create the class diagram in this file</p></li>
+<li><p>Commit the file with the message “Completed UML class diagram in Mermaid - fixes #Y” (where Y is your issue number)</p></li>
+<li><p>Move the issue to “Done” in your Kanban board</p></li>
+</ol>
+</section>
+</section>
+<section id="mermaid">
+<h2>Mermaid<a class="headerlink" href="#mermaid" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://mermaid.js.org">Mermaid</a> is a JavaScript-based diagramming and charting tool that uses Markdown-inspired syntax. It allows you to create diagrams and visualizations directly in your markdown files.</p>
+<p>Mermaid supports various types of diagrams, including flowcharts, sequence diagrams, and class diagrams. In this lab, you will use Mermaid to create a class diagram that represents the same classes and relationships as in the <a class="reference external" href="http://draw.io">draw.io</a> diagram.  Please see the <a class="reference external" href="https://mermaid.js.org/syntax/classDiagram.html">Mermaid class diagram documentation</a> for more details on syntax and features.</p>
+<p>GitHub supports rendering Mermaid diagrams directly in markdown files, so you can include your class diagram in the <code class="docutils literal notranslate"><span class="pre">UML-class-diagram.md</span></code> file you create.</p>
+</section>
+<section id="grading">
+<h2>Grading<a class="headerlink" href="#grading" title="Link to this heading">#</a></h2>
+<section id="deliverables">
+<h3>Deliverables<a class="headerlink" href="#deliverables" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>A GitHub repository containing:</p>
+<ul class="simple">
+<li><p>PNG/JPEG file of your <a class="reference external" href="http://draw.io">draw.io</a> UML class diagram</p></li>
+<li><p>A markdown file named <code class="docutils literal notranslate"><span class="pre">UML-diagram.md</span></code> with Mermaid code for the class diagram</p></li>
+</ul>
+</li>
+<li><p>A completed GitHub Project board showing your workflow progression (both tasks should be in the “Done” column)</p></li>
+<li><p>GitHub Issues that are properly closed by your commits</p></li>
+</ol>
+</section>
+<section id="following-proper-uml-notation-guidelines">
+<h3>Following proper UML notation guidelines<a class="headerlink" href="#following-proper-uml-notation-guidelines" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Class Representation</strong>:</p>
+<ul class="simple">
+<li><p>Regular classes: Rectangle with solid lines</p></li>
+<li><p>Abstract classes: Rectangle with solid lines, class name in <em>italics</em></p></li>
+</ul>
+</li>
+<li><p><strong>Visibility Modifiers</strong>:</p>
+<ul class="simple">
+<li><p>Public: +</p></li>
+<li><p>Private: -</p></li>
+<li><p>Protected: #</p></li>
+<li><p>Package: ~ (no modifier)</p></li>
+</ul>
+</li>
+<li><p><strong>Methods</strong>:</p>
+<ul class="simple">
+<li><p>Format: visibility name(parameters): returnType</p></li>
+<li><p>Abstract methods should be in <em>italics</em></p></li>
+</ul>
+</li>
+<li><p><strong>Attributes</strong>:</p>
+<ul class="simple">
+<li><p>Format: visibility name: type</p></li>
+</ul>
+</li>
+<li><p><strong>Inheritance</strong>:</p>
+<ul class="simple">
+<li><p>Shown with an arrow pointing from the subclass to the superclass</p></li>
+<li><p>Use a solid line with a hollow triangular arrowhead</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="grading-rubric">
+<h3>Grading Rubric<a class="headerlink" href="#grading-rubric" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Correct representation of classes and relationships in class diagram, proper use of UML notation for visibility, abstract classes, and methods (50%)</p>
+<ul>
+<li><p>Correct implementation using <a class="reference external" href="http://draw.io">draw.io</a> diagram (25%)</p></li>
+<li><p>Correct implementation using Mermaid diagram (25%)</p></li>
+</ul>
+</li>
+<li><p>Proper use of GitHub Classroom, Projects, and Issues with correct issue template (50%)</p>
+<ul>
+<li><p>Correctly created and managed GitHub Project (20%)</p></li>
+<li><p>Correctly created and managed GitHub Issues (20%)</p></li>
+<li><p>Proper commit messages and issue linking (10%)</p></li>
+</ul>
+</li>
+</ul>
 </section>
 </section>
 </section>
@@ -740,6 +771,15 @@ GitHub supports rendering Mermaid diagrams directly in markdown files, so you ca
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tasks">Tasks</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-1-accept-github-classroom-assignment">Task 1: Accept GitHub Classroom Assignment</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-3-create-issues">Task 3: Create Issues</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-4-visual-uml-class-diagram-with-draw-io">Task 4: Visual UML Class Diagram with draw.io</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#task-5-code-based-uml-class-diagram-with-mermaid">Task 5: Code-based UML Class Diagram with Mermaid</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mermaid">Mermaid</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading">Grading</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables">Deliverables</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#following-proper-uml-notation-guidelines">Following proper UML notation guidelines</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-rubric">Grading Rubric</a></li>
 </ul>
 </li>
 </ul>

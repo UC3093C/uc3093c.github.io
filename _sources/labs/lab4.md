@@ -141,41 +141,32 @@ When creating the issue you must:
 ![](/images/github_issue.png)
 
 
-**Issue Template**
+## Issue Template
 
-Use the issue template provided below to create the issue description.
+When creating your GitHub issues, use the following markdown template for your issue description, just copy and paste into your issue description. Be sure to remove the opening and closing backticks (```).
 
-When creating your GitHub issues, use the following markdown template for your issue description:
+```
+## Description
+Create a UML class diagram that accurately represents the Animal class hierarchy using [draw.io OR Mermaid].
 
-```{admonition} Issue Template (click here!)
-:class: tip, dropdown
+## Requirements
+- Represent all four classes: Animal, Dog, Cat, and Bird
+- Show all attributes with proper visibility notation
+- Show all methods with proper visibility notation
+- Include return types and parameters for methods
+- Properly indicate the abstract class and abstract method
+- Show all inheritance relationships
+- Follow standard UML notation
 
-Copy and paste the following template into your issue description. Be sure to remove the opening and closing backticks (```).
+## Acceptance Criteria
 
-    ```
-    ## Description
-    Create a UML class diagram that accurately represents the Animal class hierarchy using [draw.io OR Mermaid].
-
-    ## Requirements
-    - Represent all four classes: Animal, Dog, Cat, and Bird
-    - Show all attributes with proper visibility notation
-    - Show all methods with proper visibility notation
-    - Include return types and parameters for methods
-    - Properly indicate the abstract class and abstract method
-    - Show all inheritance relationships
-    - Follow standard UML notation
-
-    ## Acceptance Criteria
-
-    - [ ] All classes are correctly represented
-    - [ ] All attributes are shown with proper visibility
-    - [ ] All methods are shown with proper visibility
-    - [ ] Abstract class and method are properly indicated
-    - [ ] Inheritance relationships are correctly shown
-    - [ ] Diagram is saved as an image file.
-    - [ ] Diagram is committed to the repository
-    ```
-
+- [ ] All classes are correctly represented
+- [ ] All attributes are shown with proper visibility
+- [ ] All methods are shown with proper visibility
+- [ ] Abstract class and method are properly indicated
+- [ ] Inheritance relationships are correctly shown
+- [ ] Diagram is saved as an image file.
+- [ ] Diagram is committed to the repository
 ```
 
 ### Task 4: Visual UML Class Diagram with draw.io

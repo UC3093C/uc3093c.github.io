@@ -123,7 +123,7 @@ Accept the the following GitHub Classroom assignment invitation, this will creat
 
 [https://classroom.github.com/a/w13UuPS-](https://classroom.github.com/a/w13UuPS-)
 
-### Task 3: Create Issues
+### Task 2: Create Repository Issues
 
 Create two GitHub issues in your repository to represent the tasks you will be completing in this lab. The titles for the tasks are:
 
@@ -132,16 +132,18 @@ Create two GitHub issues in your repository to represent the tasks you will be c
 
 When creating the issue you must:
 
-- Use the issue template (in markdown syntax) provided below.  Make sure to make minior adjustments to the template to fit your specific task.  
+- Use the issue template (in markdown syntax) provided below.  Make sure to make minor adjustments to the template to fit your specific task.  
 - Assign the issues to yourself.
 - Add "documentation" as a label.
 - Add "UML" as a label, but you will need to create this label first. Use "UML" as the name and "UML diagrams" for the description.
 - Specify "Task" as the issue type.
 
+An issue should look like this:
+
 ![](/images/github_issue.png)
 
 
-## Issue Template
+#### Issue Template
 
 When creating your GitHub issues, use the following markdown template for your issue description, just copy and paste into your issue description. Be sure to remove the opening and closing backticks (```).
 

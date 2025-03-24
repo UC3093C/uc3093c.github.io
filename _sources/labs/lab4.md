@@ -1,4 +1,4 @@
-# Lab 4: UML, GitHub Issues
+# Lab 4: UML, GitHub Project and Issues
 
 
 In this lab, you will gain hands-on experience creating UML class diagrams from existing Java code using graphical diagramming tools such as **draw.io**, as well as generating diagrams programmatically with **Mermaid** syntax. This lab assignment will strengthen your ability to visually communicate object-oriented designs, and enhance your project management skills by utilizing GitHub projects and issues, including creating, organizing, and writing clear, actionable issues to manage development tasks efficiently.

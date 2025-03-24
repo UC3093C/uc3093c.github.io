@@ -113,7 +113,15 @@ public class Bird extends Animal {
 
 You should have recieved an email invitation to join the UC3093C GitHub organization.  Accept the invitation to join the organization. You will need to be a member of this organization to complete the lab.
 
-![](/images/github_uc3093c_invite.png)
+<br>
+
+```{image} /images/github_uc3093c_invite.png
+:alt: fishy
+:width: 300px
+:align: center
+```
+
+<br>
 
 If you have not received this email, please check your spam folder.  If you still do not see it, please contact me.
 
@@ -143,12 +151,16 @@ Create two items in the "To-Do" column of your project board.  These items will 
 
 You can create these items by clicking on the "+ Add-Item" icon in the "To-Do" column.  Select the option to "Create new issue" and select your GitHub repository for Lab 4.
 
+<br>
+
 ```{image} /images/github_project_create_new_issue.png
 :alt: fishy
-:width: 400px
+:width: 600px
 :align: center
 ```
 
+<br>
+ 
 Select the "Blank issue" option and then complete the issue form using the following markdown template for your issue description, just copy and paste into your issue description.
 
 ```
@@ -184,8 +196,15 @@ When creating the issue you must:
 
 When viewed from the project board, an issue should look like this:
 
-![](/images/github_issue.png)
+<br>
 
+```{image} /images/github_issue.png
+:alt: fishy
+:width: 600px
+:align: center
+```
+
+<br>
 
 ### Task 5: Visual UML Class Diagram with draw.io
 

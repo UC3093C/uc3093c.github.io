@@ -1,7 +1,7 @@
 # Lab 4: UML, GitHub Issues
 
 
-In this lab, you will gain hands-on experience creating UML class diagrams from existing Java code using graphical diagramming tools such as **draw.io**, as well as generating diagrams programmatically with **Mermaid** syntax. This lab assignment will strengthen your ability to visually communicate object-oriented designs, and enhance your project management skills by utilizing GitHub issues, including creating, organizing, and writing clear, actionable issues to manage development tasks efficiently.
+In this lab, you will gain hands-on experience creating UML class diagrams from existing Java code using graphical diagramming tools such as **draw.io**, as well as generating diagrams programmatically with **Mermaid** syntax. This lab assignment will strengthen your ability to visually communicate object-oriented designs, and enhance your project management skills by utilizing GitHub projects and issues, including creating, organizing, and writing clear, actionable issues to manage development tasks efficiently.
 
 
 ## The Code
@@ -109,37 +109,43 @@ public class Bird extends Animal {
 
 ## Tasks
 
-### Task 1: Accept GitHub Classroom Assignment
+### Task 1: Accept the GitHub Organization Invitation
+
+You should have recieved an email invitation to join the UC3093C GitHub organization.  Accept the invitation to join the organization. You will need to be a member of this organization to complete the lab.
+
+![](/images/github_uc3093c_invite.png)
+
+If you have not received this email, please check your spam folder.  If you still do not see it, please contact me.
+
+### Task 2: Accept GitHub Classroom Assignment
 
 Accept the the following GitHub Classroom assignment invitation, this will create a personal repository in the UC3093C organization.  You will be using this repository to manage your project and submit your work.
 
 [https://classroom.github.com/a/w13UuPS-](https://classroom.github.com/a/w13UuPS-)
 
-### Task 2: Create GitHub Repository Issues
 
-Create two GitHub issues in your repository to represent the tasks you will be completing in this lab.  See the [Creating an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue) documentation for more information on how to create issues in GitHub.
+### Task 3: Create GitHub Project Board
 
-The titles for the issues are:
+Create a GitHub project board in your repository to manage your tasks, you must use the Kanban template.  The name of the project should be your GitHub username followed by "Lab 4".  For example, "@loudinb's Lab 4".
+
+You must modify the board to have only the following columns:
+
+- To-Do
+- In Progress
+- Done
+
+### Task 4: Add Items to the Project Board
+
+Create two items in the "To-Do" column of your project board.  These items will represent the tasks you will be completing in this lab.  You will name these items as follows:
 
 1) "Create UML class diagram using draw.io"
 2) "Create UML class diagram using Mermaid"
 
-When creating the issue you must:
+You can create these items by clicking on the "+ Add-Item" icon in the "To-Do" column.  Select the option to "Create new issue" and select your GitHub repository for Lab 4.
 
-- Use the issue template (in markdown syntax) provided below.  Make sure to make minor adjustments to the template to fit your specific task.  
-- Assign the issues to yourself.
-- Add "documentation" as a label.
-- Add "UML" as a label, but you will need to create this label first. Use "UML" as the name and "UML diagrams" for the description.
-- Specify "Task" as the issue type.
+![](/images/github_project_create_new_issue.png)
 
-An issue should look like this:
-
-![](/images/github_issue.png)
-
-
-#### Issue Template
-
-When creating your GitHub issues, use the following markdown template for your issue description, just copy and paste into your issue description.
+Select the "Blank issue" option and then complete the issue form using the following markdown template for your issue description, just copy and paste into your issue description.
 
 ```
 ## Description
@@ -164,7 +170,20 @@ Create a UML class diagram that accurately represents the Animal class hierarchy
 - [ ] Diagram is committed to the repository as [image file or markdown file]
 ```
 
-### Task 3: Visual UML Class Diagram with draw.io
+When creating the issue you must:
+
+- Use the issue template (in markdown syntax) provided above.  Make sure to make minor adjustments to the template to fit your specific task.  
+- Assign the issues to yourself.
+- Add "documentation" as a label.
+- Add "UML" as a label, but you will need to create this label first. Use "UML" as the name and "UML diagrams" for the description.
+- Specify "Task" as the issue type.
+
+When viewed from the project board, an issue should look like this:
+
+![](/images/github_issue.png)
+
+
+### Task 5: Visual UML Class Diagram with draw.io
 
 1. Move this issue to "In Progress" in your Kanban board
 2. Create a complete UML class diagram using draw.io that represents all four classes in the code
@@ -212,11 +231,8 @@ GitHub supports rendering Mermaid diagrams directly in markdown files, so you ca
 1. A GitHub repository containing:
    - PNG/JPEG file of your draw.io UML class diagram
    - A markdown file named `UML-diagram.md` with Mermaid code for the class diagram
-
-2. A completed GitHub Project board showing your workflow progression (both tasks should be in the "Done" column)
-
-3. GitHub Issues that are properly closed by your commits
-
+2. GitHub Issues that are properly closed by your commits from the commit message, for example, "Create UML class diagram using draw.io fixes #1"
+3. A completed GitHub Project board showing your workflow progression (both tasks should be in the "Done" column)
 
 ### Following proper UML notation guidelines
 
@@ -244,9 +260,9 @@ GitHub supports rendering Mermaid diagrams directly in markdown files, so you ca
 
 ### Grading Rubric
 
-- Correct representation of classes and relationships in class diagram, proper use of UML notation for visibility, abstract classes, and methods (60%)
-  - Correct implementation using draw.io diagram (30%)
-  - Correct implementation using Mermaid diagram (30%)
-- Proper use of GitHub and Issues with correct issue template (40%)
-  - Correctly created and managed GitHub Issues (20%)
-  - Proper commit messages and issue linking (20%)
+- Correct representation of classes and relationships in class diagram, proper use of UML notation for visibility, abstract classes, and methods (50%)
+  - Correct implementation using draw.io diagram (25%)
+  - Correct implementation using Mermaid diagram (25%)
+- Proper use of GitHub Project and Issues with correct issue template (50%)
+  - Correctly created both GitHub Issues - name, description, assignee, labels, type (25%)
+  - Proper commit messages and issue linking (25%)

@@ -117,7 +117,7 @@ You should have recieved an email invitation to join the UC3093C GitHub organiza
 
 ```{image} /images/github_uc3093c_invite.png
 :alt: fishy
-:width: 300px
+:width: 200px
 :align: center
 ```
 
@@ -149,7 +149,12 @@ Create two items in the "To-Do" column of your project board.  These items will 
 1) "Create UML class diagram using draw.io"
 2) "Create UML class diagram using Mermaid"
 
-You can create these items by clicking on the "+ Add-Item" icon in the "To-Do" column.  Select the option to "Create new issue" and select your GitHub repository for Lab 4.
+
+```{warning}
+You must create these items as issues which are linked to your GitHub repository.  Read the instructions carefully to ensure you are creating issues properly.
+```
+
+You can create these items by clicking on the "+ Add-Item" icon in the "To-Do" column.  Select the option to "Create new issue". In the dialog that appears, select the GitHub repository created for Lab 4.
 
 <br>
 
@@ -161,7 +166,7 @@ You can create these items by clicking on the "+ Add-Item" icon in the "To-Do" c
 
 <br>
  
-Select the "Blank issue" option and then complete the issue form using the following markdown template for your issue description, just copy and paste into your issue description.
+Select the "Blank issue" option and then complete the issue using the following markdown template for your issue description, just copy and paste into your issue description (make sure to make minor adjustments to the template to fit your specific task).
 
 ```
 ## Description
@@ -188,7 +193,7 @@ Create a UML class diagram that accurately represents the Animal class hierarchy
 
 When creating the issue you must:
 
-- Use the issue template (in markdown syntax) provided above.  Make sure to make minor adjustments to the template to fit your specific task.  
+- Use the issue template (in markdown syntax) provided above.  
 - Assign the issues to yourself.
 - Add "documentation" as a label.
 - Add "UML" as a label, but you will need to create this label first. Use "UML" as the name and "UML diagrams" for the description.
@@ -287,5 +292,6 @@ GitHub supports rendering Mermaid diagrams directly in markdown files, so you ca
   - Correct implementation using draw.io diagram (25%)
   - Correct implementation using Mermaid diagram (25%)
 - Proper use of GitHub Project and Issues with correct issue template (50%)
-  - Correctly created both GitHub Issues - name, description, assignee, labels, type (25%)
-  - Proper commit messages and issue linking (25%)
+  - Created a project board with the correct columns (5%)
+  - Correctly created both GitHub Issues - name, description, assignee, labels, type (20%)
+  - Isuues linked to your GitHub repository and a proper commit message to automaticaly close the issue (moving it to Done). (25%)

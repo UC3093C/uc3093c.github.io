@@ -143,7 +143,11 @@ Create two items in the "To-Do" column of your project board.  These items will 
 
 You can create these items by clicking on the "+ Add-Item" icon in the "To-Do" column.  Select the option to "Create new issue" and select your GitHub repository for Lab 4.
 
-![](/images/github_project_create_new_issue.png)
+```{image} /images/github_project_create_new_issue.png
+:alt: fishy
+:width: 400px
+:align: center
+```
 
 Select the "Blank issue" option and then complete the issue form using the following markdown template for your issue description, just copy and paste into your issue description.
 
@@ -191,7 +195,7 @@ When viewed from the project board, an issue should look like this:
 4. Commit this file to your repository with the message "Completed UML class diagram in draw.io - fixes #X" (where X is your issue number)
 5. Move the issue to "Done" in your Kanban board
 
-### Task 4: Code-based UML Class Diagram with Mermaid
+### Task 6: Code-based UML Class Diagram with Mermaid
 
 1. Move this issue to "In Progress" in your Kanban board
 2. Create a markdown file in your repository named `UML-class-diagram.md`

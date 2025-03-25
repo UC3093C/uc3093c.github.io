@@ -407,34 +407,178 @@ document.write(`
                 <article class="bd-article">
                   
   <style>
-/* DRAFT watermark class */
+/* DRAFT watermark with criss-cross pattern */
+.draft-watermark {
+  position: relative;
+}
+
+.draft-watermark::before,
 .draft-watermark::after {
-  content: "DRAFT";
+  content: "";
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-30deg);
-  font-size: 15vw;
-  color: rgba(255, 0, 0, 0.1);
-  font-weight: bold;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
   z-index: 10000;
-  white-space: nowrap;
+  background-image: 
+    repeating-linear-gradient(45deg, 
+      rgba(255, 0, 0, 0.07) 0px, 
+      rgba(255, 0, 0, 0.07) 2px, 
+      transparent 2px, 
+      transparent 150px
+    ),
+    repeating-linear-gradient(-45deg, 
+      rgba(255, 0, 0, 0.07) 0px, 
+      rgba(255, 0, 0, 0.07) 2px, 
+      transparent 2px, 
+      transparent 150px
+    );
+  background-size: 250px 250px, 250px 250px;
+  background-position: 0 0, 0 0;
+}
+
+.draft-watermark::before {
+  content: "";
+  background-image: 
+    repeating-linear-gradient(45deg, 
+      transparent 0px, 
+      transparent 75px, 
+      rgba(255, 0, 0, 0) 75px, 
+      rgba(255, 0, 0, 0) 76px
+    ),
+    repeating-linear-gradient(-45deg, 
+      transparent 0px, 
+      transparent 75px, 
+      rgba(255, 0, 0, 0) 75px, 
+      rgba(255, 0, 0, 0) 76px
+    );
+}
+
+/* Add DRAFT text at intersection points */
+.draft-watermark::after {
+  background: none;
+  background-image: 
+    repeating-linear-gradient(45deg, 
+      transparent 0px, 
+      transparent 125px, 
+      rgba(255, 0, 0, 0.1) 125px, 
+      rgba(255, 0, 0, 0.1) 126px
+    ),
+    repeating-linear-gradient(-45deg, 
+      transparent 0px, 
+      transparent 125px, 
+      rgba(255, 0, 0, 0.1) 125px, 
+      rgba(255, 0, 0, 0.1) 126px
+    );
+}
+
+body {
+  position: relative;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 10000;
+  background-image: 
+    repeating-linear-gradient(45deg, 
+      transparent, 
+      transparent 120px, 
+      rgba(255, 0, 0, 0) 120px, 
+      rgba(255, 0, 0, 0) 250px
+    ),
+    repeating-linear-gradient(-45deg, 
+      transparent, 
+      transparent 120px, 
+      rgba(255, 0, 0, 0) 120px, 
+      rgba(255, 0, 0, 0) 250px
+    );
+}
+
+.draft-text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10001;
+}
+
+.draft-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    repeating-linear-gradient(45deg, 
+      transparent, 
+      transparent 123px, 
+      rgba(255, 0, 0, 0.1) 123px, 
+      rgba(255, 0, 0, 0.1) 124px
+    ),
+    repeating-linear-gradient(-45deg, 
+      transparent, 
+      transparent 123px, 
+      rgba(255, 0, 0, 0.1) 123px, 
+      rgba(255, 0, 0, 0.1) 124px
+    );
+}
+
+/* Add actual DRAFT text at intersection points */
+.draft-text span {
+  position: absolute;
+  color: rgba(255, 0, 0, 0.1);
+  font-weight: bold;
   font-family: sans-serif;
+  font-size: 20px;
+  transform: rotate(-45deg);
+  white-space: nowrap;
 }
 
 /* Ensure watermark appears in print as well */
 @media print {
-  .draft-watermark::after {
+  .draft-watermark::before,
+  .draft-watermark::after,
+  .draft-text,
+  .draft-text::after,
+  .draft-text span {
     position: fixed;
-    top: 50%;
-    left: 50%;
   }
 }
 </style>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   document.body.classList.add('draft-watermark');
+  
+  // Create a div for DRAFT text elements
+  var draftTextDiv = document.createElement('div');
+  draftTextDiv.className = 'draft-text';
+  document.body.appendChild(draftTextDiv);
+  
+  // Create a grid of DRAFT texts
+  var windowWidth = window.innerWidth;
+  var windowHeight = window.innerHeight;
+  
+  // Place DRAFT text at grid intervals
+  for (var y = 0; y < windowHeight; y += 250) {
+    for (var x = 0; x < windowWidth; x += 250) {
+      var draftSpan = document.createElement('span');
+      draftSpan.textContent = 'DRAFT';
+      draftSpan.style.left = x + 'px';
+      draftSpan.style.top = y + 'px';
+      draftTextDiv.appendChild(draftSpan);
+    }
+  }
 });
 </script>
 <section class="tex2jax_ignore mathjax_ignore" id="checkpoint-3-project-contribution-reflection">

@@ -396,23 +396,6 @@
 <li><strong>Object</strong>: An actual house built from that blueprint. It has specific values for those things – 3 bedrooms, blue paint, brick walls. It’s a concrete instance.</li>
 </ul>
 </div>
-<div class="fragment current-visible absolute" style="top: 200px; left: 0px; ">
-<div class="tight">
-<p>In programming terms:</p>
-<ul>
-<li><strong>Class</strong>: A definition of a data type (like Car).</li>
-<li><strong>Object</strong>: A specific instance of that data type (like my red Toyota Corolla).</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="what-object-diagrams-show" class="slide level3">
-<h3>What Object Diagrams show?</h3>
-<ul>
-<li><strong>Objects</strong>: Represented as rectangles. Each rectangle represents a specific instance of a class.</li>
-<li><strong>Attributes</strong>: The data that the object holds. These are shown inside the rectangle, usually as attributeName: attributeValue.</li>
-<li><strong>Links</strong>: Relationships between objects. These are shown as lines connecting the objects. Links represent how objects interact with each other.</li>
-</ul>
 </section></section>
 <section>
 <section id="uml-package-diagrams" class="title-slide slide level1 center">
@@ -482,6 +465,21 @@
 <figure>
 <p><img data-src="./assets/uml/package_diagrams/use_dependency.svg" class="quarto-figure quarto-figure-center" width="600"></p>
 </figure>
+</div>
+<div class="smaller-80">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>A dependency relationship is shown as a dashed arrow pointing from the client (dependent) package to the supplier (provider) package, indicating that the client package requires the supplier package for its functionality.</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="fragment current-visible absolute" style="left: 0px; ">
@@ -691,7 +689,10 @@
 <h1>UML Composite Structure Diagrams</h1>
 
 </section>
-<section id="what-are-composite-structure-diagrams" class="slide level3">
+<section id="example-4" class="slide level3" data-background-image="./assets/modeling/uml_composit_structure_diagram.svg" data-background-size="contain">
+<h3>Example</h3>
+</section>
+<section id="what-are-composite-structure-diagrams" class="slide level3" data-background-image="./assets/modeling/uml_composit_structure_diagram.svg" data-background-size="contain" data-background-opacity="0.13">
 <h3>What are Composite Structure Diagrams?</h3>
 <div class="smaller-70">
 <p>Composite structure diagrams provide <strong>insight into the internal composition of elements</strong>, illustrating:</p>
@@ -722,7 +723,7 @@
 <h1>UML Deployment Diagrams</h1>
 
 </section>
-<section id="example-4" class="slide level3" data-background-image="./assets/uml/deployment_diagrams/deployment_diagram.svg" data-background-size="contain">
+<section id="example-5" class="slide level3" data-background-image="./assets/uml/deployment_diagrams/deployment_diagram.svg" data-background-size="contain">
 <h3>Example</h3>
 </section>
 <section id="what-are-they-1" class="slide level3 hide" data-background-image="./assets/uml/deployment_diagrams/deployment_diagram.svg" data-background-size="contain" data-background-opacity="0.17">
@@ -756,37 +757,43 @@
 </div>
 </div>
 </div>
-</section></section>
-<section>
-<section id="uml-profile-diagrams" class="title-slide slide level1 center">
-<h1>UML Profile Diagrams</h1>
+</section>
+<section id="profile-diagrams" class="title-slide slide level2 center">
+<h2>Profile Diagrams</h2>
+<p>A profile diagram is a type of structural diagram in the Unified Modeling Language (UML) that serves as a generic extension mechanism for customizing UML models to specific domains or platforms. These extension mechanisms refine the standard semantics in a strictly additive manner, ensuring no contradictions arise with the standard semantics. Profiles are constructed using stereotypes, tagged value definitions, and constraints, which are then applied to particular model elements such as Classes, Attributes, Operations, and Activities. A Profile comprises a set of such extensions that, when combined, tailor UML to a specific domain (such as aerospace, healthcare, or finance) or a particular platform (like J2EE or .NET).</p>
+</section>
+
+<section id="profile-diagram-example" class="title-slide slide level2 center scrollable">
+<h2>Profile Diagram Example</h2>
+
+<img data-src="./assets/modeling/uml_profile_diagram_staruml.png" class="r-stretch"><aside class="notes">
+<p>The profile diagram is a UML (Unified Modeling Language) diagram which is used to define extensions to UML itself. A profile allows for the customization of UML models for particular domains and platforms. The diagram illustrates the use of stereotypes, which are extensibility mechanisms of UML, to classify and extend UML elements for different purposes.</p>
+<p>In the diagram:</p>
+<ol type="1">
+<li><p><strong>MetaClass (UMLClass)</strong>: This represents a meta-class from UML, which can be extended to create new elements in a UML model. A meta-class in UML is an element that defines the characteristics of a model element.</p></li>
+<li><p><strong>Stereotypes</strong>: These are extensibility mechanisms that allow designers to extend the vocabulary of UML in order to create new model elements with additional semantics. They are shown as classes with the keyword <code>«stereotype»</code>. The stereotypes depicted in the diagram are:</p>
+<ul>
+<li><code>control</code>: Often used to represent a controlling entity or logic in the system, like a controller in an MVC (Model-View-Controller) architecture.</li>
+<li><code>entity</code>: Typically represents a business or database entity, something that holds data and has persistence.</li>
+<li><code>boundary</code>: Usually represents the interaction between the system and users or other systems, such as a user interface or an API boundary.</li>
+</ul></li>
+<li><p><strong>Extension</strong>: The arrow labeled “Extension” with a filled arrowhead pointing from the <code>UMLClass</code> to the stereotypes signifies that these stereotypes are extensions of the UML meta-class. This means that they inherit the properties of a UML class but add additional semantics specific to the stereotype.</p></li>
+<li><p><strong>Meta Class and Stereotype</strong>: These labels are likely added to explain that on one side of the diagram, we have the UML meta-class, and on the other side, we have stereotypes that extend this meta-class.</p></li>
+</ol>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 
 </section>
-<section id="what-are-profile-diagrams" class="slide level3">
-<h3>What are Profile Diagrams?</h3>
-<div class="smaller-70">
-<p>Profile diagram is basically an extensibility mechanism that allows you to extend and customize UML by adding new building blocks, creating new properties and specifying new semantics in order to make the language suitable to your specific problem domain.</p>
-<ul>
-<li>Tailoring of UML for specific domains, platforms, or methodologies</li>
-<li>Precise definition of semantics for model elements in particular contexts</li>
-<li>Standardized extensions that maintain compatibility with core UML</li>
-</ul>
-</div>
 </section>
-<section id="extensibility-mechanism" class="slide level3">
-<h3>Extensibility Mechanism</h3>
-<p>There are three main mechanisms for extending UML:</p>
-<ul>
-<li><strong>Stereotypes</strong>: Customizes existing UML elements by adding new properties or semantics.</li>
-<li><strong>Tagged Values</strong>: Adds additional information to UML elements, providing more context or metadata.</li>
-<li><strong>Constraints</strong>: Specifies rules or conditions that must be satisfied by the model elements.</li>
-</ul>
-</section>
-<section id="profiles" class="slide level3">
-<h3>Profiles</h3>
-<p>A profile is a collection of stereotypes, tagged values, and constraints that can be applied to UML models. Profiles allow you to create domain-specific modeling languages (DSMLs) by defining new elements and relationships that are relevant to your specific domain.</p>
-
-</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

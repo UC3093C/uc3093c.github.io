@@ -133,31 +133,20 @@
 <h1>Software Architecture</h1>
 
 </section>
-<section id="what-is-software-architecture" class="slide level3">
-<h3>What is Software Architecture?</h3>
-<div>
-<ul>
-<li class="fragment">Software architecture defines the system’s fundamental structure, including its components and their relationships</li>
-<li class="fragment">It bridges system design and requirements engineering, identifying key structural elements and their interfaces</li>
-<li class="fragment">An architectural model presents the system’s organization through a network of communicating components</li>
-</ul>
+<section id="architecture-design" class="slide level3 hide">
+<h3>Architecture &amp; Design</h3>
+<div class="bam fragment current-visible absolute smaller-95" style="top: 70px; left: 0px; ">
+<p>What does “Architecture” make you think of?</p>
 </div>
-<aside class="notes">
-<p>Software architecture is fundamental in the initial stages of software development. It helps in outlining a structured solution that meets technical and operational requirements, while optimizing common quality attributes like performance and security. The architecture provides a blueprint for system design and a framework that guides the development process, ensuring consistency, scalability, and maintainability of the system. Discuss the importance of clearly defining software architecture, the role of architectural patterns, and how architecture influences critical decisions in software development.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<div class="bam fragment current-visible absolute smaller-95" style="top: 70px; left: 0px; ">
+<p>What comes to mind when you think of “Design”?</p>
+</div>
 </section>
-<section id="architecture-vs.-design" class="slide level3">
-<h3>Architecture vs.&nbsp;Design</h3>
+<section id="architecture-vs-design-pt.1" class="slide level3 hide" data-background-image="./assets/architecture/architecture-and-design-2.png" data-background-size="cover">
+<h3>Architecture vs Design pt.1</h3>
+</section>
+<section id="architecture-vs-design-pt.2" class="slide level3 hide" data-background-image="./assets/architecture/architecture-and-design-2.png" data-background-size="cover" data-background-opacity="0.10">
+<h3>Architecture vs Design pt.2</h3>
 <p>There is a clear distinction between architecture and design, though many confuse the two concepts.</p>
 <div class="fragment current-visible absolute" style="top: 220px; left: 0px; ">
 <p><strong>Architecture</strong>: The high-level structure of the entire system.</p>
@@ -178,6 +167,65 @@
 <aside class="notes">
 <p>Architecture provides the “big picture” view of a system. It’s about understanding the major components, their responsibilities, and how they interact. Think of it as the blueprint of a building showing the layout of rooms and hallways.</p>
 <p>Design addresses the “how” of implementation for each architectural component. It’s like deciding what furniture goes in each room and how it’s arranged. In future lectures, we’ll explore design principles in depth, including detailed aspects of cohesion and coupling at the design level.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="architecture-design-in-se" class="slide level3 hide">
+<h3>Architecture &amp; Design in SE</h3>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[[1],[1],[1]]">
+<div class="quarto-layout-row">
+<div class="smaller-95 quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p>How do architecture and design fit into the software engineering process?</p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="./assets/architecture/architecture_within_se.svg" class="quarto-figure quarto-figure-center" width="700"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<p><img data-src="./assets/1x1.png" width="10"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="level-of-abstraction" class="slide level3">
+<h3>Level of Abstraction</h3>
+<p>In both architecture and design, we create an abstract representation of reality by:</p>
+<ul>
+<li>Ignoring insignificant details,</li>
+<li>Focusing on the most important properties, and</li>
+<li>Considering both modularity (i.e., separation of concerns) and interconnections.</li>
+</ul>
+</section>
+<section id="what-is-software-architecture" class="slide level3">
+<h3>What is Software Architecture?</h3>
+<div>
+<ul>
+<li class="fragment">Software architecture defines the system’s fundamental structure, including its components and their relationships</li>
+<li class="fragment">It bridges system design and requirements engineering, identifying key structural elements and their interfaces</li>
+<li class="fragment">An architectural model presents the system’s organization through a network of communicating components</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Software architecture is fundamental in the initial stages of software development. It helps in outlining a structured solution that meets technical and operational requirements, while optimizing common quality attributes like performance and security. The architecture provides a blueprint for system design and a framework that guides the development process, ensuring consistency, scalability, and maintainability of the system. Discuss the importance of clearly defining software architecture, the role of architectural patterns, and how architecture influences critical decisions in software development.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -216,20 +264,17 @@
 </section>
 <section id="evolution-of-architectural-thinking" class="slide level3">
 <h3>Evolution of Architectural Thinking</h3>
-<div class="smaller-95">
+<div>
 <ul>
-<li class="fragment"><strong>Traditional View</strong>: Architecture as a fixed blueprint</li>
+<li class="fragment"><strong>Traditional View</strong>: Architecture as a rigid structure</li>
 <li class="fragment"><strong>Contemporary View</strong>: Architecture as an evolving framework</li>
-<li class="fragment"><strong>Key Shift</strong>: From rigid structures to adaptable systems that can respond to:
+<li class="fragment"><strong>Key Shift</strong>: To adaptable systems that can respond to:
 <ul>
 <li class="fragment">Changing business requirements</li>
 <li class="fragment">Emerging technologies</li>
 <li class="fragment">User feedback and market demands</li>
 </ul></li>
 </ul>
-</div>
-<div class="fragment fade-in">
-<p><strong>Modern Approaches</strong>: Contemporary methodologies embrace <em>adaptive architecture</em> that evolves with changing requirements.</p>
 </div>
 <aside class="notes">
 <p>The shift from viewing architecture as a fixed entity to seeing it as an evolving framework represents one of the most significant changes in software development philosophy. This evolution aligns with the broader movement toward agile methodologies, which emphasize adaptability and responsiveness over rigid planning. Modern architects must balance stability with flexibility, creating systems that have a solid foundation but can grow and change as needed.</p>
@@ -306,23 +351,23 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="architecture-and-modularity" class="slide level3">
-<h3>Architecture and Modularity</h3>
-<div class="tight smaller-95">
-<p>Architectural modularity defines how effectively system components can be separated and recombined:</p>
+<section id="architectural-modularity" class="slide level3 hide">
+<h3>Architectural Modularity</h3>
+<div class="smaller-85 tight">
+<p><strong>Architectural modularity</strong> describes how easily a system can be divided into independent components and recombined in different ways. A highly modular architecture promotes:</p>
 <ul>
-<li><strong>Flexibility</strong>: Supports varied usage through adaptable components</li>
-<li><strong>Abstraction</strong>: Selecting appropriate abstractions () is essential for effective modularity</li>
+<li><strong>Flexibility:</strong> Components can be adapted for diverse uses.</li>
+<li><strong>Abstraction:</strong> Effective modularity depends on choosing appropriate abstractions for each component.</li>
 </ul>
-<p><strong>Modularity Benefits at the Architectural Level</strong>:</p>
+<p><strong>Benefits of Architectural Modularity:</strong></p>
 <ul>
-<li>Enables parallel development of major components</li>
-<li>Simplifies system-level testing</li>
-<li>Facilitates reuse of architectural elements</li>
+<li><strong>Parallel Development:</strong> Allows independent teams to work on major components simultaneously.</li>
+<li><strong>Simplified Testing:</strong> Isolates components, making system-level testing more manageable.</li>
+<li><strong>Improved Reuse:</strong> Enables the reuse of architectural elements in different contexts.</li>
 </ul>
 </div>
 <aside class="notes">
-<p>At the architectural level, modularity focuses on major system components and their interfaces, not detailed class-level design. Architectural modularity decisions have far-reaching implications for the entire system’s development, testing, and maintenance. The principles of modularity apply differently at the architectural level compared to the detailed design level, which we’ll cover in future lectures.</p>
+<p>Architectural modularity focuses on major system components and their interfaces, not detailed class-level design. Decisions about architectural modularity significantly impact development, testing, and maintenance. The principles of modularity are applied differently at the architectural level than at the detailed design level, which we will discuss in later lectures.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -335,25 +380,27 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="architectural-modularity-principles" class="slide level3 hide">
-<h3>Architectural Modularity Principles</h3>
-<p>To achieve modularity in architecture, strive for:</p>
-<div class="tight smaller-95">
+<section id="principles-of-architectural-modularity" class="slide level3 hide">
+<h3>Principles of Architectural Modularity</h3>
+<p>To achieve a modular architecture, focus on:</p>
+<div class="fragment current-visible absolute" style="top: 100px; left: 0px; ">
 <p><strong>Component Cohesion</strong>:</p>
 <ul>
-<li>Ensures architectural components have well-defined responsibilities</li>
-<li>Groups related functionality within architectural boundaries</li>
-<li>Minimizes cross-cutting concerns between components</li>
+<li><strong>Defined Responsibility:</strong> Each component should have a clear, single responsibility.</li>
+<li><strong>Functionality Grouping:</strong> Group related functionality within component boundaries.</li>
+<li><strong>Minimized Cross-Cutting Concerns:</strong> Reduce dependencies and shared responsibilities between components.</li>
 </ul>
-<p><strong>Component Coupling</strong>:</p>
+</div>
+<div class="fragment current-visible absolute" style="top: 100px; left: 0px; ">
+<p><strong>Component Coupling:</strong></p>
 <ul>
-<li>Reduces dependencies between architectural elements</li>
-<li>Uses well-defined interfaces for component interaction</li>
-<li>Minimizes knowledge one component needs about others</li>
+<li><strong>Reduced Dependencies:</strong> Minimize dependencies between architectural components.</li>
+<li><strong>Well-Defined Interfaces:</strong> Use clear interfaces for components to interact.</li>
+<li><strong>Limited Knowledge:</strong> A component should know as little as possible about the implementation details of other components.</li>
 </ul>
 </div>
 <aside class="notes">
-<p>At the architectural level, cohesion and coupling apply to major system components rather than individual classes or methods. A cohesive architectural component encapsulates functionality that belongs together at a high level. Loose coupling between components allows for independent development, testing, and evolution of major system parts. These architectural principles set the stage for more detailed design decisions within each component.</p>
+<p>At the architectural level, cohesion and coupling apply to major system components, not individual classes or methods. A cohesive component encapsulates functionality that logically belongs together at a high level. Loose coupling enables independent development, testing, and evolution of major system parts. These architectural principles provide the foundation for more detailed design decisions within each component.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -368,28 +415,35 @@
 </section>
 <section id="implementing-architectural-modularity" class="slide level3 hide">
 <h3>Implementing Architectural Modularity</h3>
-<div class="smaller-80">
-<p>To implement architectural modularity, focus on:</p>
-<div class="tight">
-<p><strong>Architectural Boundaries</strong> (foundational concept):</p>
+<p>To achieve architectural modularity in practice, focus on:</p>
+<div class="tight fragment current-visible absolute smaller-90" style="top: 100px; left: 0px; ">
+<p><strong>1. System Integration</strong></p>
+<p>The process of combining the individual architectural components into a cohesive and functional whole.</p>
 <ul>
-<li>Clearly define component responsibilities and interfaces</li>
-<li>Establish protocols for cross-component communication</li>
-<li>Create explicit dependency structures</li>
+<li><strong>Interface-Based Interaction:</strong> Ensure components interact solely through their defined interfaces.</li>
+<li><strong>Separation of Concerns:</strong> Maintain clear separation of responsibilities during integration.</li>
 </ul>
-<p><strong>Interface Contracts</strong> (implementation details):</p>
+</div>
+<div class="tight fragment current-visible absolute smaller-90" style="top: 100px; left: 0px; ">
+<p><strong>2. Architectural Boundaries:</strong></p>
+<p>The foundation that provides clear and distinct limits of each component within the system.</p>
 <ul>
-<li>Specify expected behaviors between components</li>
-<li>Define data formats for component interactions</li>
-<li>Support independent component evolution</li>
+<li><strong>Clear Responsibilities &amp; Interfaces:</strong> Define what each component <em>does</em> and <em>how</em> it interacts. (Purpose and scope)</li>
+<li><strong>Communication Protocols:</strong> Establish the rules for components to communicate.</li>
+<li><strong>Explicit Dependencies:</strong> Make dependencies between components clear and well-defined.</li>
 </ul>
-<div class="fragment fade-in">
-<p><strong>System Integration</strong> (the overarching purpose): Focuses on how components interact through their interfaces while maintaining separation of concerns</p>
 </div>
-</div>
+<div class="tight fragment current-visible absolute smaller-90" style="top: 100px; left: 0px; ">
+<p><strong>3. Interface Contracts:</strong></p>
+<p>The implementation details with explicit agreements that define how different architectural components interact with each other.</p>
+<ul>
+<li><strong>Specified Behaviors:</strong> Define the expected behavior of each component’s interface.</li>
+<li><strong>Data Formats:</strong> Specify the data formats used for component interactions.</li>
+<li><strong>Independent Evolution:</strong> Design interfaces to allow components to evolve independently.</li>
+</ul>
 </div>
 <aside class="notes">
-<p>Architectural modularity implementation focuses on defining clear boundaries between major system components and establishing well-defined interfaces for their interaction. This creates a foundation for the more detailed design work that will occur within each component. While detailed design principles like specific types of cohesion and coupling will be covered in future lectures, architectural modularity establishes the high-level structure within which those principles will be applied.</p>
+<p>Implementing architectural modularity involves defining clear boundaries and well-defined interfaces between major system components. This creates the foundation for detailed design work within each component. While detailed design principles like cohesion and coupling will be covered later, architectural modularity establishes the high-level structure for those principles to be applied effectively.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -574,16 +628,9 @@
 <h1>Architectural Patterns</h1>
 
 </section>
-<section id="architectural-patterns-1" class="title-slide slide level2 center">
-<h2>Architectural Patterns</h2>
-<div>
-<ul>
-<li class="fragment"><strong>Definition</strong>: Reusable solutions to common architectural problems</li>
-<li class="fragment"><strong>Purpose</strong>: Capture proven practices for system organization</li>
-<li class="fragment"><strong>Utility</strong>: Provide guidance on when patterns are appropriate</li>
-<li class="fragment"><strong>Representation</strong>: Use both diagrams and text to communicate pattern elements</li>
-</ul>
-</div>
+<section id="architectural-patterns-1" class="slide level3">
+<h3>Architectural Patterns</h3>
+<p>Architectural patterns are reusable solutions to common problems in software architecture, providing structured blueprints for proven practices that organize interactions between subsystems, clarify component roles, and enhance both development efficiency and long-term maintainability.</p>
 <aside class="notes">
 <p>Architectural patterns encapsulate the collective wisdom of experienced architects, offering tried and tested solutions to common design challenges. They serve as a blueprint for structuring software systems, ensuring efficiency, scalability, and reliability. By detailing when to use or avoid certain patterns, architects can make informed decisions that best suit their specific requirements and constraints.</p>
 <style type="text/css">
@@ -598,19 +645,8 @@
           display:block!important;
       }</style></aside>
 </section>
-
-<section id="pattern-structure" class="title-slide slide level2 center">
-<h2>Pattern Structure</h2>
-<div class="tight smaller-80">
-<p><strong>Common Pattern Elements</strong>:</p>
-<ul>
-<li>Name and classification</li>
-<li>Problem and context</li>
-<li>Solution structure</li>
-<li>Consequences (pros and cons)</li>
-<li>Implementation considerations</li>
-</ul>
-<p><strong>Benefits of Using Patterns</strong>:</p>
+<section id="benefits-of-using-patterns" class="slide level3">
+<h3>Benefits of Using Patterns</h3>
 <ul>
 <li>Leverage proven solutions</li>
 <li>Establish common vocabulary</li>
@@ -618,7 +654,6 @@
 <li>Facilitate knowledge transfer</li>
 <li>Enable systematic comparison of alternatives</li>
 </ul>
-</div>
 <aside class="notes">
 <p>Understanding the structured documentation of patterns helps architects select and apply them appropriately. Each pattern should clearly communicate what problem it solves, when it should be used, how it is implemented, and what trade-offs are involved. This systematic approach to documenting architectural knowledge makes it more accessible and applicable across different projects and teams.</p>
 <style type="text/css">
@@ -633,10 +668,9 @@
           display:block!important;
       }</style></aside>
 </section>
-
-<section id="pattern-selection" class="title-slide slide level2 center">
-<h2>Pattern Selection</h2>
-<div>
+<section id="pattern-selection" class="slide level3">
+<h3>Pattern Selection</h3>
+<div class="smaller-80">
 <ul>
 <li class="fragment"><strong>Requirements Analysis</strong>: Match patterns to functional and non-functional requirements</li>
 <li class="fragment"><strong>Trade-off Analysis</strong>: Consider the strengths and weaknesses of each pattern</li>
@@ -645,7 +679,19 @@
 </ul>
 </div>
 <div class="fragment fade-in">
-<p><strong>Remember</strong>: Patterns are tools, not rules. Adapt them to your specific context.</p>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>Patterns are tools, not rules. Adapt them to your specific context.</p>
+</div>
+</div>
+</div>
 </div>
 <aside class="notes">
 <p>Selecting the right architectural pattern(s) requires careful consideration of requirements, constraints, and future evolution. Often, the best approach involves combining multiple patterns to address different aspects of the system. For example, a system might use a layered architecture overall, with client-server for remote access, event-driven for user interaction, and microservices for certain components. The key is to understand each pattern’s strengths and weaknesses and apply them judiciously.</p>
@@ -661,17 +707,20 @@
           display:block!important;
       }</style></aside>
 </section>
-
-<section id="some-architectural-patterns" class="title-slide slide level2 center">
-<h2>Some Architectural Patterns</h2>
-<div>
-<ul>
-<li class="fragment"><strong>Master-Slave</strong>: Control hierarchy where master delegates to slaves</li>
-<li class="fragment"><strong>Blackboard</strong>: Shared knowledge repository with independent knowledge sources</li>
-<li class="fragment"><strong>Broker</strong>: Mediates communication between distributed components</li>
-<li class="fragment"><strong>Repository</strong>: Shared data store accessed by independent components</li>
-<li class="fragment"><strong>Peer-to-Peer</strong>: Distributed architecture where all nodes are equal</li>
-</ul>
+<section id="some-architectural-patterns" class="slide level3">
+<h3>Some Architectural Patterns</h3>
+<p>Beyond the core patterns, numerous specialized patterns address particular architectural challenges.</p>
+<div class="fragment current-visible absolute" style="top: 200px; left: 0px; ">
+<p><strong>Master-Slave</strong>: The master-slave pattern provides a clear hierarchy for task delegation and coordination.</p>
+</div>
+<div class="fragment current-visible absolute" style="top: 200px; left: 0px; ">
+<p><strong>Blackboard</strong>: The blackboard pattern offers a flexible approach for problems where multiple knowledge sources need to collaborate.</p>
+</div>
+<div class="fragment current-visible absolute" style="top: 200px; left: 0px; ">
+<p><strong>Broker</strong>: Broker patterns facilitate communication in distributed systems.</p>
+</div>
+<div class="fragment current-visible absolute" style="top: 200px; left: 0px; ">
+<p><strong>Peer-to-Peer</strong>: Peer-to-peer patterns distribute responsibility across all nodes, eliminating central points of failure.</p>
 </div>
 <aside class="notes">
 <p>Beyond the core patterns, numerous specialized patterns address particular architectural challenges. The master-slave pattern provides a clear hierarchy for task delegation and coordination. The blackboard pattern offers a flexible approach for problems where multiple knowledge sources need to collaborate. Broker patterns facilitate communication in distributed systems. Repository patterns centralize data storage and access. Peer-to-peer patterns distribute responsibility across all nodes, eliminating central points of failure.</p>
@@ -686,8 +735,7 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-</section>
+</section></section>
 <section>
 <section id="pipes-and-filters-architecture" class="title-slide slide level1 center">
 <h1>Pipes and Filters Architecture</h1>
